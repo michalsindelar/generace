@@ -9,9 +9,7 @@ import { ConnectedRouter } from 'react-router-redux';
 
 import store, { history } from './services/store';
 
-// Dependencies from Adobe website
-import '../styles/index.css';
-import '../styles/website-general.css';
+import '../styles/fonts.css'; // Fonts
 
 const app = document.getElementById('root');
 

@@ -4,11 +4,12 @@ import React from "react"
 import { FullPage } from "react-full-page"
 
 import Attendance from "./components/Attendance"
+import Intro from "./components/Intro"
 
 const MainPage = () =>
   <div className="MainPage">
     <FullPage style={{backgroundColor: "red"}}>
-      <Attendance />
+      <Intro />
       <Attendance />
       <Attendance />
       <Attendance />

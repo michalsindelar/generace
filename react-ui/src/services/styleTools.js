@@ -21,6 +21,9 @@ export const MEDIA_ONLY_QUERY = Object.keys(SIZES).reduce((accumulator, label) =
   return accumulator
 }, {})
 
+export const DEFAULT_FONT = "kulturista-web"
+
 export const PALETTE = {
-  PRIMARY: "#F81F3A"
+  PRIMARY: "#E63C43",
+  SECONDARY: "#0F183F",
 }
