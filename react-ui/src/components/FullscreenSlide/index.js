@@ -1,5 +1,6 @@
 // @flow
 import React from "react"
+import styled from 'styled-components';
 
 import { Slide} from "react-full-page"
 
@@ -11,13 +12,20 @@ type Props = {
   disableContainer?: boolean
 }
 
+const FullscreenSlideStyl = styled.div`
+  background: ${PALETTE.PRIMARY} url('./slide-bg.svg') center bottom 30px no-repeat;
+  height: 100%; // Super important
+`
+
 const FullscreenSlide = ({ disableContainer, children } : Props) =>
 
-  <Slide className="FullscreenSlide" style={{backgroundColor: PALETTE.PRIMARY}}>
-    {disableContainer
-      ? {children}
-      : <Container>{children}</Container>
-    }
-  </Slide>
+  <FullscreenSlideStyl>
+    <Slide className="FullscreenSlide">
+      {disableContainer
+        ? {children}
+        : <Container>{children}</Container>
+      }
+    </Slide>
+  </FullscreenSlideStyl>
 
 export default FullscreenSlide
