@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {PALETTE} from "../services/styleTools"
 
 const HeaderStyl = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0; left: 0; right: 0;
   display: flex;
   justify-content: space-between;
