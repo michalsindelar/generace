@@ -26,4 +26,5 @@ export const DEFAULT_FONT = "kulturista-web"
 export const PALETTE = {
   PRIMARY: "#E63C43",
   SECONDARY: "#0F183F",
+  WHITE: "#FFF",
 }
