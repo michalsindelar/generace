@@ -7,7 +7,7 @@ import Appendix from "./components/Appendix"
 import Attendance from "./components/Attendance"
 import Header from "../../components/Header"
 import Info from "./components/Info"
-import Intro from "./components/Intro"
+import Intro from "./scenes/Intro/index"
 
 const MainPage = () =>
   <div className="MainPage">
