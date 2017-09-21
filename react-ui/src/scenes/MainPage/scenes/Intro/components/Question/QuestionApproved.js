@@ -5,7 +5,10 @@ import { QuestionSubtitle } from "./index"
 
 const QuestionApproved = ({}) =>
   <div>
-    <QuestionSubtitle>Chci sdělit, že volím</QuestionSubtitle>
+    <QuestionSubtitle>
+      Chci sdělit, že volím
+    </QuestionSubtitle>
+
     <p>A motivovat tak ostatní.</p>
 
     <p>Sdílet stránku Generace s názorem</p>

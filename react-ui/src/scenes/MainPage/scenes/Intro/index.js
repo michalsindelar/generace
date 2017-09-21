@@ -9,8 +9,11 @@ const IntroStyl = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
+  margin: 0 auto;
+  
   align-content: center;
   align-items: center;
+  justify-content: center;
 `
 
 const IntroCenter = styled.div`
@@ -27,6 +30,7 @@ const IntroLogoStyl = styled.img`
   color: ${PALETTE.SECONDARY};
   font-size: 20px;
   max-width: 260px;
+  cursor: pointer;
 `
 
 const IntroHeaderStyl = styled.h1`
@@ -61,9 +65,7 @@ class Intro extends Component {
 
         <IntroStyl>
 
-          {open &&
-            <Question view="approved" />
-          }
+          <Question view="approved" open={open} />
 
           <IntroCenter>
 
@@ -76,9 +78,7 @@ class Intro extends Component {
 
           </IntroCenter>
 
-          {open &&
-            <Question view="declined" />
-          }
+          <Question view="declined" open={open} />
 
         </IntroStyl>
 

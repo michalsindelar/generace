@@ -9,7 +9,7 @@ import {PALETTE} from "../../../../../../services/styleTools"
 const QuestionStyl = styled.div`
   display: flex;
   height: 100%;
-  width: 30%;
+  width: 20%;
   justify-content: center;
   flex-direction: column;
   font-size: 14px;
@@ -35,23 +35,24 @@ class Question extends Component {
     super(props)
 
     this.state = {
-      open: true,
+      openDetail: true,
     };
   }
 
   toggleDialog = () => {
     this.setState({
-      open: !this.state.open
+      openDetail: !this.state.openDetail
     })
   }
 
   render() {
     const {
+      open,
       view
     } = this.props
 
     const {
-      open
+      openDetail
     } = this.state
 
     const body = view === "approved"
@@ -60,16 +61,18 @@ class Question extends Component {
 
 
     const head = view === "approved"
-      ? <QuestionHead  title="Jdu" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
-      : <QuestionHead  title="Nejdu" subtitle="Proč nevolím?" toggleDialog={this.toggleDialog} />
+      ? <QuestionHead style={{textAlign: "right"}} title="Jdu" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
+      : <QuestionHead title="Nejdu" subtitle="Proč nevolím?" toggleDialog={this.toggleDialog} />
 
     return (
       <QuestionStyl>
 
-        <div>
-          {head}
-          {open && body}
-        </div>
+        {open &&
+          <div>
+            {head}
+            {openDetail && body}
+          </div>
+        }
 
       </QuestionStyl>
     )

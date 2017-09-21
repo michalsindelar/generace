@@ -8,8 +8,8 @@ const QuestionHeadStyl = styled.div`
   cursor: pointer;
 `
 
-const QuestionHead = ({ title, subtitle, toggleDialog }) =>
-  <QuestionHeadStyl onClick={toggleDialog}>
+const QuestionHead = ({ title, subtitle, toggleDialog, ...rest }) =>
+  <QuestionHeadStyl onClick={toggleDialog} {...rest}>
     <QuestionTitle>{title}</QuestionTitle>
     <QuestionSubtitle>{subtitle}</QuestionSubtitle>
 
