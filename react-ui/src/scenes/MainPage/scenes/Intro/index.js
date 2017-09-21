@@ -3,8 +3,7 @@ import React, { Component } from "react"
 import FullscreenSlide from "../../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
 import {PALETTE} from "../../../../services/styleTools"
-import Approved from "./components/Approved"
-import Declined from "./components/Declined"
+import Question from "./components/Question/index"
 
 const IntroStyl = styled.div`
   display: flex;
@@ -21,7 +20,7 @@ const IntroCenter = styled.div`
   align-content: center;
   flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: 40%;
 `
 
 const IntroLogoStyl = styled.img`
@@ -41,7 +40,7 @@ class Intro extends Component {
     super(props)
 
     this.state = {
-      open: false,
+      open: true,
     };
   }
 
@@ -63,21 +62,22 @@ class Intro extends Component {
         <IntroStyl>
 
           {open &&
-            <Approved />
+            <Question view="approved" />
           }
 
           <IntroCenter>
+
             <IntroLogoStyl
-              // onClick={this.toggleQuestions}
+              onClick={this.toggleQuestions}
               src="urna.svg"
               alt="Generace s názorem | Volební urna"
             />
-
             <IntroHeaderStyl>Znáte tohle?</IntroHeaderStyl>
+
           </IntroCenter>
 
           {open &&
-            <Approved />
+            <Question view="declined" />
           }
 
         </IntroStyl>
