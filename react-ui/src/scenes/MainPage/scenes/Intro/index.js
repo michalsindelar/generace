@@ -2,7 +2,7 @@
 import React, { Component } from "react"
 import FullscreenSlide from "../../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {PALETTE} from "../../../../services/styleTools"
+import {animation, PALETTE} from "../../../../services/styleTools"
 import Question from "./components/Question/index"
 
 const IntroStyl = styled.div`
@@ -31,6 +31,7 @@ const IntroLogoStyl = styled.img`
   font-size: 20px;
   max-width: 260px;
   cursor: pointer;
+  animation: 2s ${animation} alternate infinite;
 `
 
 const IntroHeaderStyl = styled.h1`
@@ -74,6 +75,7 @@ class Intro extends Component {
               src="urna.svg"
               alt="Generace s názorem | Volební urna"
             />
+
             <IntroHeaderStyl>Znáte tohle?</IntroHeaderStyl>
 
           </IntroCenter>

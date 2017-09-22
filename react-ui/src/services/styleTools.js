@@ -1,5 +1,7 @@
 // these sizes are arbitrary and you can set them to whatever you wish
-import { css } from 'styled-components'
+
+import { css, keyframes } from 'styled-components'
+import { pulse } from 'react-animations';
 
 const SIZES = {
   DESKTOP_BIG: 1170,
@@ -28,3 +30,6 @@ export const PALETTE = {
   SECONDARY: "#0F183F",
   WHITE: "#FFF",
 }
+
+
+export const animation = keyframes`${pulse}`;

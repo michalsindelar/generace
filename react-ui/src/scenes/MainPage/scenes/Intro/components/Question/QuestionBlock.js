@@ -5,10 +5,13 @@ import styled from "styled-components"
 import { QuestionSubtitle } from "./index"
 
 
+const PADDING = "10px"
+
 const QuestionBlockStyl = styled.div`
   cursor: pointer;
   border-radius: 4px;
-  padding: 5px;
+  padding: ${PADDING};
+  margin-left: -${PADDING};
 `
 
 const QuestionBlock = ({ bordered, title, text, extraTest }) =>
