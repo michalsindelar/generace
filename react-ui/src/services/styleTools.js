@@ -1,7 +1,7 @@
 // these sizes are arbitrary and you can set them to whatever you wish
 
-import { css, keyframes } from 'styled-components'
-import { pulse } from 'react-animations';
+import styled, { css, keyframes } from 'styled-components'
+import { pulse, fadeIn } from 'react-animations';
 
 const SIZES = {
   DESKTOP_BIG: 1170,
@@ -32,4 +32,17 @@ export const PALETTE = {
 }
 
 
-export const animation = keyframes`${pulse}`;
+export const ANIMATION = {
+  pulse: keyframes`${pulse}`,
+  fadeIn: keyframes`${fadeIn}`
+};
+
+
+export const FadeInComp = styled.div`
+  animation: 2s ${ANIMATION.fadeIn};
+`
+
+export const UnstyledLink = styled.a`
+  color: ${PALETTE.SECONDARY};
+  text-decoration: none;
+`

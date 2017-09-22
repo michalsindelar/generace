@@ -4,15 +4,16 @@ import styled from 'styled-components';
 import QuestionApproved from "./QuestionApproved"
 import QuestionDeclined from "./QuestionDeclined"
 import QuestionHead from "./QuestionHead"
-import {PALETTE} from "../../../../../../services/styleTools"
+import { PALETTE } from "../../../../../../services/styleTools"
 
 const QuestionStyl = styled.div`
   display: flex;
   height: 100%;
-  width: 20%;
+  width: 30%;
   justify-content: center;
   flex-direction: column;
   font-size: 14px;
+
 `
 
 export const QuestionTitle = styled.h2`
@@ -20,6 +21,7 @@ export const QuestionTitle = styled.h2`
   color: ${PALETTE.secondary};
   font-weight: 700;
   margin-bottom: 5px;
+
 `
 
 export const QuestionSubtitle = styled.h2`
@@ -35,7 +37,7 @@ class Question extends Component {
     super(props)
 
     this.state = {
-      openDetail: true,
+      openDetail: false,
     };
   }
 
@@ -44,7 +46,7 @@ class Question extends Component {
       openDetail: !this.state.openDetail
     })
   }
-
+O
   render() {
     const {
       open,
@@ -65,7 +67,7 @@ class Question extends Component {
       : <QuestionHead title="Nejdu" subtitle="Proč nevolím?" toggleDialog={this.toggleDialog} />
 
     return (
-      <QuestionStyl>
+      <QuestionStyl style={{textAlign: view === "approved" ? "right" : "left"}}>
 
         {open &&
           <div>

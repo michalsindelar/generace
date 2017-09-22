@@ -1,8 +1,9 @@
 import React from "react"
+import {FACEBOOK_LINK} from "../services/consts"
 
 const Facebook = ({ href }) =>
 
-  <a href={href || "https://www.facebook.com/generacesnazorem/?ref=br_rs"}>
+  <a href={href || FACEBOOK_LINK}>
     <img
       style={{width: "34px", height: "34px"}}
       src="./fb.svg"

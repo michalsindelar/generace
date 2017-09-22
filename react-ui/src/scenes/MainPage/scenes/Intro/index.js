@@ -2,7 +2,7 @@
 import React, { Component } from "react"
 import FullscreenSlide from "../../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {animation, PALETTE} from "../../../../services/styleTools"
+import {ANIMATION, PALETTE} from "../../../../services/styleTools"
 import Question from "./components/Question/index"
 
 const IntroStyl = styled.div`
@@ -31,7 +31,7 @@ const IntroLogoStyl = styled.img`
   font-size: 20px;
   max-width: 260px;
   cursor: pointer;
-  animation: 2s ${animation} alternate infinite;
+  animation: 2s ${ANIMATION.pulse} alternate infinite;
 `
 
 const IntroHeaderStyl = styled.h1`
@@ -45,7 +45,7 @@ class Intro extends Component {
     super(props)
 
     this.state = {
-      open: true,
+      open: false,
     };
   }
 

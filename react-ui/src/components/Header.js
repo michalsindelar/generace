@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components';
 import {PALETTE} from "../services/styleTools"
+import {FACEBOOK_LINK} from "../services/consts"
 
 const HeaderStyl = styled.div`
   position: fixed;
@@ -19,7 +20,9 @@ const Header = ({ children }) =>
   <HeaderStyl className={`Container`}>
     <div style={{marginLeft: "30px"}}>Generace s názorem</div>
     <div style={{marginRight: "30px"}}>
-      <img style={{width: "34px", height: "34px"}} src="./fb.svg" alt="Generace s názorem | Facebook" />
+      <a href={FACEBOOK_LINK}>
+        <img style={{width: "34px", height: "34px"}} src="./fb.svg" alt="Generace s názorem | Facebook" />
+      </a>
     </div>
   </HeaderStyl>
 
