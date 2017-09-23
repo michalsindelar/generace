@@ -23,7 +23,7 @@ const QuestionDeclined = () =>
     />
 
     <QuestionBlock
-      title="Zajímám se o politiku, ale můj nástroj je NEvolit."
+      title="Zajímám se o politiku, ale můj názor je NEvolit."
       text="Např. jsem anarchista, nechcu podpořit žádnou ze stran / kandidátů, neuznávám demokracii."
       extraTest="V pořádku, mám názor."
       style={{marginTop: "80px"}}
