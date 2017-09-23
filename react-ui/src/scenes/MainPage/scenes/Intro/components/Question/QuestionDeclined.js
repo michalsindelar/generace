@@ -2,6 +2,7 @@
 import React from "react"
 
 import QuestionBlock from "./QuestionBlock"
+import {MAPA_VOLEBNICH_LINK, ONLINE_VOLEBNI_PRUKAZ_LINK, VOLEBNI_CALC_LINK} from "../../../../../../services/consts"
 
 const QuestionDeclined = () =>
   <div>
@@ -13,19 +14,29 @@ const QuestionDeclined = () =>
     <QuestionBlock
       title="Nemám na to čas."
       text="Jít volůit zabere člověku v průměru půl hodiny, protože volební místnosti jsou všem bláízko."
+      label={{
+        href: MAPA_VOLEBNICH_LINK,
+        label: "Mapa volebních místností"
+      }}
     />
 
     <QuestionBlock
       title="Bydlím jinde, než kde mohu volit."
       text="Volební průkaz je nástroj, se kterým lze volit kdekoliv. Lze jej obdržet poštou po vyplnění elektronické žádosti."
-      bordered
+      label={{
+        href: ONLINE_VOLEBNI_PRUKAZ_LINK,
+        label: "Mapa volebních místností"
+      }}
     />
 
     <QuestionBlock
-      title="Zajímám se o politiku, ale můj názor je NEvolit."
-      text="Např. jsem anarchista, nechcu podpořit žádnou ze stran / kandidátů, neuznávám demokracii."
-      extraTest="V pořádku, mám názor."
+      title="Nevím koho."
+      text="Volební kalkulačka ti poradí, s kterou stranou si rozumíš."
       style={{marginTop: "80px"}}
+      label={{
+        href: VOLEBNI_CALC_LINK,
+        label: "Volební kalkulačka"
+      }}
     />
 
   </div>
