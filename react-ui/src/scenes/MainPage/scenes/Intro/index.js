@@ -41,7 +41,7 @@ const IntroLogoStyl = styled.img`
   font-size: 20px;
   max-width: 260px;
   cursor: pointer;
-  animation: 2s ${ANIMATION.pulse} alternate infinite;
+  animation: 1s ${ANIMATION.pulse} alternate infinite;
 `
 
 const IntroHeaderStyl = styled.h1`
@@ -60,7 +60,7 @@ class Intro extends Component {
     super(props)
 
     this.state = {
-      open: true,
+      open: false,
     };
   }
 
