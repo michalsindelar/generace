@@ -41,7 +41,7 @@ export const ANIMATION = {
 
 
 export const FadeInComp = styled.div`
-  animation: 2s ${ANIMATION.fadeIn};
+  animation: 1s ${ANIMATION.fadeIn};
 `
 
 export const UnstyledLink = styled.a`

@@ -2,12 +2,12 @@
 import React from "react"
 
 import { QuestionSubtitle } from "./index"
-import { FadeInComp, UnstyledLink } from "../../../../../../services/styleTools"
+import { UnstyledLink } from "../../../../../../services/styleTools"
 import {CREATE_AVATAR_LINK} from "../../../../../../services/consts"
 
 
 const QuestionApproved = ({}) =>
-  <FadeInComp>
+  <div>
     <QuestionSubtitle>
       Chci sdělit, že volím
     </QuestionSubtitle>
@@ -21,7 +21,7 @@ const QuestionApproved = ({}) =>
     <QuestionSubtitle>
       <UnstyledLink href={CREATE_AVATAR_LINK}>ZDE!</UnstyledLink>
     </QuestionSubtitle>
-  </FadeInComp>
+  </div>
 
 export default QuestionApproved
 

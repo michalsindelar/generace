@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import QuestionApproved from "./QuestionApproved"
 import QuestionDeclined from "./QuestionDeclined"
 import QuestionHead from "./QuestionHead"
-import {isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE} from "../../../../../../services/styleTools"
+import {isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE, FadeInComp} from "../../../../../../services/styleTools"
+import Icon from "../../../../../../components/Icon"
 
 const QuestionStyl = styled.div`
   display: flex;
@@ -75,10 +76,12 @@ O
       <QuestionStyl style={{textAlign: (view === "approved" && !isLtDesktopBig()) ? "right" : "left"}}>
 
         {open &&
-          <div>
+          <FadeInComp>
+            <Icon src={`./${view}.svg`} />
             {head}
-            {openDetail && body}
-          </div>
+
+            {openDetail && <FadeInComp>{body}</FadeInComp>}
+          </FadeInComp>
         }
 
       </QuestionStyl>

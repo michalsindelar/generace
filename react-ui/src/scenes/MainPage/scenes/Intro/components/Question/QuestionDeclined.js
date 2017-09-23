@@ -2,10 +2,9 @@
 import React from "react"
 
 import QuestionBlock from "./QuestionBlock"
-import { FadeInComp } from "../../../../../../services/styleTools"
 
 const QuestionDeclined = () =>
-  <FadeInComp>
+  <div>
     <QuestionBlock
       title="Politika mě nezajímá,"
       text="Je mi jedno jestli budu žít v demokracii, nebo totalitě."
@@ -29,7 +28,7 @@ const QuestionDeclined = () =>
       style={{marginTop: "80px"}}
     />
 
-  </FadeInComp>
+  </div>
 
 export default QuestionDeclined
 

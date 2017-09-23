@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
-import {PALETTE} from "../services/styleTools"
+import {MEDIA_ONLY_QUERY, PALETTE} from "../services/styleTools"
 import {FACEBOOK_LINK} from "../services/consts"
 import Facebook from "./Facebook"
 import Instagram from "./Instagram"
@@ -22,6 +22,10 @@ const HeaderStyl = styled.div`
   color: ${PALETTE.SECONDARY};
   background-color: ${PALETTE.PRIMARY};
   z-index: 999;
+  
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    position: absolute;
+  `}
 `
 const HeaderIcon = styled.div`
   margin-right: 20px;

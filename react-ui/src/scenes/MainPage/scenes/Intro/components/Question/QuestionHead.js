@@ -7,8 +7,7 @@ import { QuestionTitle, QuestionSubtitle } from "./index"
 
 const QuestionHeadStyl = styled.div`
   cursor: pointer;
-    animation: 2s ${ANIMATION.fadeIn};
-
+  animation: 2s ${ANIMATION.fadeIn};
 `
 
 const QuestionHead = ({ title, subtitle, toggleDialog, ...rest }) =>
