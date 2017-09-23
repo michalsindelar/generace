@@ -69,15 +69,14 @@ O
 
 
     const head = view === "approved"
-      ? <QuestionHead style={{textAlign: isLtDesktopBig() ? "left" : "right"}} title="Jdu" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
-      : <QuestionHead title="Nejdu" subtitle="Proč nevolím?" toggleDialog={this.toggleDialog} />
+      ? <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "center" : "right"}} title="Jdu" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
+      : <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "center" : "left"}} title="Nejdu" subtitle="Proč nevolím?" toggleDialog={this.toggleDialog} />
 
     return (
       <QuestionStyl style={{textAlign: (view === "approved" && !isLtDesktopBig()) ? "right" : "left"}}>
 
         {open &&
           <FadeInComp>
-            <Icon src={`./${view}.svg`} />
             {head}
 
             {openDetail && <FadeInComp>{body}</FadeInComp>}
