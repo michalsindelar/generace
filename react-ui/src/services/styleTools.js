@@ -10,6 +10,8 @@ export const SIZES = {
   PHONE: 376
 }
 
+export const ICON_DIMENSION = "34px"
+
 // iterate through the sizes and create a MEDIA_ONLY_QUERY template
 export const MEDIA_ONLY_QUERY = Object.keys(SIZES).reduce((accumulator, label) => {
   // use em in breakpoints to work properly cross-browser and support users

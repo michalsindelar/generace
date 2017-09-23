@@ -2,6 +2,8 @@ import React from "react"
 import styled from 'styled-components';
 import {PALETTE} from "../services/styleTools"
 import {FACEBOOK_LINK} from "../services/consts"
+import Facebook from "./Facebook"
+import Instagram from "./Instagram"
 
 const HeaderStyl = styled.div`
   position: fixed;
@@ -10,7 +12,7 @@ const HeaderStyl = styled.div`
   justify-content: space-between;
   padding: 20px 0;
 
-  height: 30px;
+  height: 34px;
   width: 100%;
   max-width: 100%;
 
@@ -21,15 +23,19 @@ const HeaderStyl = styled.div`
   background-color: ${PALETTE.PRIMARY};
   z-index: 999;
 `
+const HeaderIcon = styled.div`
+  margin-right: 20px;
+`
 
 const Header = ({ children }) =>
   <HeaderStyl>
-    <div style={{marginLeft: "30px"}}>Generace s názorem</div>
-    <div style={{marginRight: "30px"}}>
-      <a href={FACEBOOK_LINK}>
-        <img style={{width: "34px", height: "34px"}} src="./fb.svg" alt="Generace s názorem | Facebook" />
-      </a>
+    <div style={{marginLeft: "20px"}}>Generace s názorem</div>
+
+    <div style={{display: "flex"}}>
+      <HeaderIcon><Facebook /></HeaderIcon>
+      <HeaderIcon><Instagram /></HeaderIcon>
     </div>
+
   </HeaderStyl>
 
 export default Header

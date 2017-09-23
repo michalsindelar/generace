@@ -1,11 +1,13 @@
 import React from "react"
 import {FACEBOOK_LINK} from "../services/consts"
 
+import { ICON_DIMENSION } from "../services/styleTools"
+
 const Facebook = ({ href }) =>
 
   <a href={href || FACEBOOK_LINK}>
     <img
-      style={{width: "34px", height: "34px"}}
+      style={{width: ICON_DIMENSION, height: ICON_DIMENSION}}
       src="./fb.svg"
       alt="Generace s názorem | Facebook"
     />
