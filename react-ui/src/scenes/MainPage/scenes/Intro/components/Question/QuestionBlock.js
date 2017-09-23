@@ -3,6 +3,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { QuestionSubtitle } from "./index"
+import {MEDIA_ONLY_QUERY} from "../../../../../../services/styleTools"
 
 
 const PADDING = "10px"
@@ -13,6 +14,12 @@ const QuestionBlockStyl = styled.div`
   padding: ${PADDING};
   margin-left: -${PADDING};
   margin-bottom: 20px;
+
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    margin-top: 15px;
+    margin-bottom: 10px;
+  `}
+  
 `
 
 const QuestionBlockHere = styled.a`

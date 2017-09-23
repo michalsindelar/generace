@@ -3,7 +3,7 @@
 import styled, { css, keyframes } from 'styled-components'
 import { pulse, fadeIn } from 'react-animations';
 
-const SIZES = {
+export const SIZES = {
   DESKTOP_BIG: 1170,
   DESKTOP: 992,
   TABLET: 768,
@@ -46,3 +46,7 @@ export const UnstyledLink = styled.a`
   color: ${PALETTE.SECONDARY};
   text-decoration: none;
 `
+
+export const isLtDesktopBig = () => {
+  return window && window.innerWidth <= SIZES.DESKTOP
+}

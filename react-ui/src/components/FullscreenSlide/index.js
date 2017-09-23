@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Slide} from "react-full-page"
 
 import Container from "../Container"
-import {PALETTE} from "../../services/styleTools"
+import {MEDIA_ONLY_QUERY, PALETTE} from "../../services/styleTools"
 
 type Props = {
   children: any,
@@ -15,6 +15,10 @@ type Props = {
 const FullscreenSlideStyl = styled.div`
   background: ${PALETTE.PRIMARY} url('./slide-bg.svg') center bottom 30px no-repeat;
   height: 100%; // Super important
+  
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    padding-bottom: 60px;
+  `}
 `
 
 const FullscreenSlide = ({ disableContainer, children } : Props) =>

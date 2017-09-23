@@ -2,7 +2,7 @@
 import React from "react"
 import FullscreenSlide from "../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {PALETTE} from "../../../services/styleTools"
+import {MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
 
 const AttendanceStyl = styled.div`
   display: flex;
@@ -19,12 +19,21 @@ const AttendanceSubheader = styled.p`
   font-size: 20px;
   text-align: center;
   max-width: 55%;
+
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    max-width: 80%;
+  `}
 `
 
 const AttendanceHeaderStyl = styled.h1`
   color: ${PALETTE.SECONDARY};
   font-size: 350px;
   margin: 0;
+
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    font-size: 200px;
+  `}
+
 `
 
 const Attendance = () =>

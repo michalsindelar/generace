@@ -8,12 +8,14 @@ const HeaderStyl = styled.div`
   top: 0; left: 0; right: 0;
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 30px;
   width: 100%;
   font-size: 24px;
   font-weight: 600;
   padding: 20px 0;
   color: ${PALETTE.SECONDARY};
+  background-color: ${PALETTE.PRIMARY};
+  z-index: 999;
 `
 
 const Header = ({ children }) =>

@@ -8,17 +8,35 @@ import Attendance from "./components/Attendance"
 import Header from "../../components/Header"
 import Info from "./components/Info"
 import Intro from "./scenes/Intro/index"
+import {isLtDesktopBig} from "../../services/styleTools"
 
-const MainPage = () =>
-  <div className="MainPage">
-    <Header/>
-    <FullPage style={{backgroundColor: "red"}}>
-      <Intro />
-      <Attendance />
-      <Info />
-      <Appendix />
-    </FullPage>
-  </div>
+const MainPage = () => {
+
+  return (
+    <div className="MainPage">
+      <Header/>
+
+      {isLtDesktopBig() ?
+
+        <div>
+          <Intro />
+          <Attendance />
+          <Info />
+          <Appendix />
+        </div> :
+
+        <FullPage>
+          <Intro />
+          <Attendance />
+          <Info />
+          <Appendix />
+        </FullPage>
+      }
+
+    </div>
+  )
+}
+
 
 export default MainPage;
 

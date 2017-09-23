@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import QuestionApproved from "./QuestionApproved"
 import QuestionDeclined from "./QuestionDeclined"
 import QuestionHead from "./QuestionHead"
-import { PALETTE } from "../../../../../../services/styleTools"
+import {isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE} from "../../../../../../services/styleTools"
 
 const QuestionStyl = styled.div`
   display: flex;
@@ -13,6 +13,11 @@ const QuestionStyl = styled.div`
   justify-content: center;
   flex-direction: column;
   font-size: 14px;
+  
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    width: 100%;
+    padding-top: 20px;
+  `}
 
 `
 
@@ -63,11 +68,11 @@ O
 
 
     const head = view === "approved"
-      ? <QuestionHead style={{textAlign: "right"}} title="Jdu" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
+      ? <QuestionHead style={{textAlign: isLtDesktopBig() ? "left" : "right"}} title="Jdu" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
       : <QuestionHead title="Nejdu" subtitle="Proč nevolím?" toggleDialog={this.toggleDialog} />
 
     return (
-      <QuestionStyl style={{textAlign: view === "approved" ? "right" : "left"}}>
+      <QuestionStyl style={{textAlign: (view === "approved" && !isLtDesktopBig()) ? "right" : "left"}}>
 
         {open &&
           <div>

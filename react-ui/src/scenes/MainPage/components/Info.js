@@ -2,7 +2,7 @@
 import React from "react"
 import FullscreenSlide from "../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {PALETTE} from "../../../services/styleTools"
+import {MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
 
 const Page = styled.div`
   display: flex;
@@ -11,11 +11,20 @@ const Page = styled.div`
   max-width: 100%;
   margin: 0 auto;
   padding-top: 5%;
+  
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    display: block;
+  `}
 `
 
 const IntroCol = styled.div`
   padding: 0 30px; 
   width: 33%;
+  
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    width: 100%;
+    padding: 0;
+  `}
 `
 
 const IntroParagraph = styled.p`

@@ -2,7 +2,7 @@
 import React, { Component } from "react"
 import FullscreenSlide from "../../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {ANIMATION, PALETTE} from "../../../../services/styleTools"
+import {ANIMATION, isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE} from "../../../../services/styleTools"
 import Question from "./components/Question/index"
 
 const IntroStyl = styled.div`
@@ -14,6 +14,11 @@ const IntroStyl = styled.div`
   align-content: center;
   align-items: center;
   justify-content: center;
+  
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    display: block;
+  `}
+
 `
 
 const IntroCenter = styled.div`
@@ -24,6 +29,11 @@ const IntroCenter = styled.div`
   flex-direction: column;
   height: 100%;
   width: 40%;
+  
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    width: 100%;
+    padding-top: 80px;
+  `}
 `
 
 const IntroLogoStyl = styled.img`
@@ -45,7 +55,7 @@ class Intro extends Component {
     super(props)
 
     this.state = {
-      open: false,
+      open: true,
     };
   }
 
@@ -60,29 +70,29 @@ class Intro extends Component {
       open
     } = this.state
 
+    const approved = <Question view="approved" open={open} />
+    const declined = <Question view="declined" open={open} />
+    const center =
+      <IntroCenter>
+        <IntroLogoStyl
+          onClick={this.toggleQuestions}
+          src="urna.svg"
+          alt="Generace s názorem | Volební urna"
+        />
+        <IntroHeaderStyl>Znáte tohle?</IntroHeaderStyl>
+      </IntroCenter>
 
     return (
       <FullscreenSlide className="Attendance">
+        {isLtDesktopBig() ?
+          <IntroStyl>
+            {center} {approved} {declined}
+          </IntroStyl> :
 
-        <IntroStyl>
-
-          <Question view="approved" open={open} />
-
-          <IntroCenter>
-
-            <IntroLogoStyl
-              onClick={this.toggleQuestions}
-              src="urna.svg"
-              alt="Generace s názorem | Volební urna"
-            />
-
-            <IntroHeaderStyl>Znáte tohle?</IntroHeaderStyl>
-
-          </IntroCenter>
-
-          <Question view="declined" open={open} />
-
-        </IntroStyl>
+          <IntroStyl>
+            {approved} {center} {declined}
+          </IntroStyl>
+        }
 
       </FullscreenSlide>
     )
