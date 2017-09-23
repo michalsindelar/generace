@@ -8,18 +8,22 @@ const HeaderStyl = styled.div`
   top: 0; left: 0; right: 0;
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+
   height: 30px;
   width: 100%;
+  max-width: 100%;
+
   font-size: 24px;
   font-weight: 600;
-  padding: 20px 0;
+
   color: ${PALETTE.SECONDARY};
   background-color: ${PALETTE.PRIMARY};
   z-index: 999;
 `
 
 const Header = ({ children }) =>
-  <HeaderStyl className={`Container`}>
+  <HeaderStyl>
     <div style={{marginLeft: "30px"}}>Generace s názorem</div>
     <div style={{marginRight: "30px"}}>
       <a href={FACEBOOK_LINK}>

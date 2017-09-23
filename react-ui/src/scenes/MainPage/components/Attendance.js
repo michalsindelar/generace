@@ -21,8 +21,17 @@ const AttendanceSubheader = styled.p`
   max-width: 55%;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`
+    max-width: 60%;
+  `}
+  
+  ${MEDIA_ONLY_QUERY.TABLET`
     max-width: 80%;
   `}
+  
+  ${MEDIA_ONLY_QUERY.PHONE`
+    max-width: 100%;
+  `}
+  
 `
 
 const AttendanceHeaderStyl = styled.h1`
@@ -31,7 +40,7 @@ const AttendanceHeaderStyl = styled.h1`
   margin: 0;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`
-    font-size: 200px;
+    font-size: 150px;
   `}
 
 `

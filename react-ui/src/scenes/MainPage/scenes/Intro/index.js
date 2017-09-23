@@ -48,6 +48,11 @@ const IntroHeaderStyl = styled.h1`
   color: ${PALETTE.SECONDARY};
   font-size: 60px;
   clear: both;
+  
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    font-size: 40px;
+    margin-top: 20px;
+  `}
 `
 
 class Intro extends Component {
@@ -72,15 +77,17 @@ class Intro extends Component {
 
     const approved = <Question view="approved" open={open} />
     const declined = <Question view="declined" open={open} />
-    const center =
-      <IntroCenter>
-        <IntroLogoStyl
-          onClick={this.toggleQuestions}
-          src="urna.svg"
-          alt="Generace s názorem | Volební urna"
-        />
-        <IntroHeaderStyl>Znáte tohle?</IntroHeaderStyl>
-      </IntroCenter>
+
+    const centerLogo = <IntroLogoStyl
+      onClick={this.toggleQuestions}
+      src="urna.svg"
+      alt="Generace s názorem | Volební urna"
+    />
+
+    const centerText = <IntroHeaderStyl>Znáte tohle?</IntroHeaderStyl>
+    const center = isLtDesktopBig()
+      ? <IntroCenter>{centerText}{centerLogo}</IntroCenter>
+      : <IntroCenter>{centerLogo}{centerText}</IntroCenter>
 
     return (
       <FullscreenSlide className="Attendance">
