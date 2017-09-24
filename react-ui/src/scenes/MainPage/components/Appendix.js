@@ -2,8 +2,9 @@
 import React from "react"
 import FullscreenSlide from "../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {PALETTE} from "../../../services/styleTools"
+import {MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
 import Facebook from "../../../components/Facebook"
+import {AUTHOR, INFO_EMAIL} from "../../../services/consts"
 
 const AppendixStyl = styled.div`
   display: flex;
@@ -22,8 +23,20 @@ const AppendixTitle = styled.h2`
   color: ${PALETTE.SECONDARY};
 `
 
+const AppendixFooterStyl = styled.div`
+  text-align: right;
+  font-size: 12px;  
+`
+
+
+const AppendixFooter = () =>
+  <AppendixFooterStyl>
+    <span style={{marginRight: "20px"}}>{INFO_EMAIL}</span>
+    <span>{AUTHOR}</span>
+  </AppendixFooterStyl>
+
 const Appendix = () =>
-  <FullscreenSlide className="Appendix">
+  <FullscreenSlide className="Appendix" footer={<AppendixFooter />}>
 
     <AppendixStyl>
       <AppendixTitle>Mám názor.</AppendixTitle>
