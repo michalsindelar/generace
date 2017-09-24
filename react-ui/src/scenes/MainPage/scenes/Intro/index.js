@@ -49,6 +49,7 @@ const IntroHeaderStyl = styled.h1`
   color: ${PALETTE.SECONDARY};
   font-size: 60px;
   clear: both;
+  margin-bottom: 150px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     font-size: 40px;
@@ -85,10 +86,8 @@ class Intro extends Component {
       alt="Generace s názorem | Volební urna"
     />
 
-    const centerText = <IntroHeaderStyl>Znáte tohle?</IntroHeaderStyl>
-    const center = isLtDesktopBig()
-      ? <IntroCenter>{centerText}{centerLogo}</IntroCenter>
-      : <IntroCenter>{centerLogo}{centerText}</IntroCenter>
+    const centerText = <IntroHeaderStyl>Jdeš volit?</IntroHeaderStyl>
+    const center = <IntroCenter>{centerText}{centerLogo}</IntroCenter>
 
     return (
       <FullscreenSlide className="Attendance">
