@@ -1,5 +1,5 @@
 // @flow
-import React from "react"
+import React, {Component} from "react"
 import styled from "styled-components"
 
 import { QuestionSubtitle } from "./index"
@@ -34,25 +34,54 @@ const QuestionBlockHere = styled.a`
   text-decoration: none;
 `
 
-const QuestionBlock = ({ bordered, title, text, extraTest, label, ...rest }) =>
-  <QuestionBlockStylWrapper>
-    <QuestionBlockStyl
-      {...rest}
-    >
-      <div>
-        <QuestionSubtitle style={{marginTop: 0}}>{title}</QuestionSubtitle>
-        <p>{text}</p>
-        <p>{extraTest}</p>
-      </div>
+class QuestionBlock extends Component {
+  constructor(props) {
+    super(props);
 
-    </QuestionBlockStyl>
+    this.state = {
+      open: false
+    };
+  }
 
-    {label &&
-      <div style={{marginTop: PADDING, marginLeft: PADDING, }}>
-        <LabelLink href={label.href}>{label.label}</LabelLink>
-      </div>
-    }
+  toggleText = () => {
+    this.setState({
+      open: !this.state.open
+    })
+  }
 
-  </QuestionBlockStylWrapper>
+  render() {
+    const { title, text, extraTest, label, ...rest } = this.props
+    const { open } = this.state
+
+    return (
+      <QuestionBlockStylWrapper>
+        <QuestionBlockStyl
+          {...rest}
+        >
+          <div onClick={this.toggleText}>
+            <QuestionSubtitle style={{marginTop: 0}}>{title}</QuestionSubtitle>
+
+            {open &&
+              <div>
+                <p>{text}</p>
+                <p>{extraTest}</p>
+              </div>
+            }
+
+          </div>
+
+        </QuestionBlockStyl>
+
+        {open && label &&
+          <div style={{marginTop: PADDING, marginLeft: PADDING, }}>
+            <LabelLink href={label.href}>{label.label}</LabelLink>
+          </div>
+        }
+
+      </QuestionBlockStylWrapper>
+    )
+  }
+
+}
 
 export default QuestionBlock

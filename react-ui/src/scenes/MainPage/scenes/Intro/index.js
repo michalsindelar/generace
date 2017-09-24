@@ -30,6 +30,7 @@ const IntroCenter = styled.div`
   flex-direction: column;
   height: 100%;
   width: 40%;
+  text-align: center;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     width: 100%;
@@ -49,6 +50,7 @@ const IntroHeaderStyl = styled.h1`
   color: ${PALETTE.SECONDARY};
   font-size: 60px;
   clear: both;
+  margin-top: -20px;
   margin-bottom: 150px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
@@ -87,7 +89,7 @@ class Intro extends Component {
     />
 
     const centerText = <IntroHeaderStyl>Jdeš volit?</IntroHeaderStyl>
-    const center = <IntroCenter>{centerText}{centerLogo}</IntroCenter>
+    const center = <IntroCenter><div>{centerText}{centerLogo}</div></IntroCenter>
 
     return (
       <FullscreenSlide className="Attendance">

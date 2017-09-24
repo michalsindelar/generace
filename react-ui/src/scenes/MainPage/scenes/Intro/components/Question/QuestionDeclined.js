@@ -13,7 +13,7 @@ const QuestionDeclined = () =>
 
     <QuestionBlock
       title="Nemám na to čas."
-      text="Jít volůit zabere člověku v průměru půl hodiny, protože volební místnosti jsou všem bláízko."
+      text="Jít volit zabere člověku v průměru půl hodiny, protože volební místnosti jsou všem bláízko."
       label={{
         href: MAPA_VOLEBNICH_LINK,
         label: "Mapa volebních místností"
@@ -25,7 +25,7 @@ const QuestionDeclined = () =>
       text="Volební průkaz je nástroj, se kterým lze volit kdekoliv. Lze jej obdržet poštou po vyplnění elektronické žádosti."
       label={{
         href: ONLINE_VOLEBNI_PRUKAZ_LINK,
-        label: "Mapa volebních místností"
+        label: "Online voličský průkaz"
       }}
     />
 
