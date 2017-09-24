@@ -43,7 +43,7 @@ class Question extends Component {
     super(props)
 
     this.state = {
-      openDetail: false,
+      openDetail: true,
     };
   }
 
@@ -69,8 +69,8 @@ O
 
 
     const head = view === "approved"
-      ? <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "center" : "right"}} title="Jdu" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
-      : <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "center" : "left"}} title="Nejdu" subtitle="Proč nevolím?" toggleDialog={this.toggleDialog} />
+      ? <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "center" : "right"}} title="JDU" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
+      : <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "center" : "left"}} title="NEJDU" subtitle="Proč?" toggleDialog={this.toggleDialog} />
 
     return (
       <QuestionStyl style={{textAlign: (view === "approved" && !isLtDesktopBig()) ? "right" : "left"}}>

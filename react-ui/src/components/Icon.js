@@ -1,11 +1,12 @@
 import React from "react"
 import { ICON_DIMENSION } from "../services/styleTools"
 
-const Icon = ({ src }) =>
+const Icon = ({ src, width, height, alt,...rest }) =>
   <img
-    style={{width: ICON_DIMENSION, height: ICON_DIMENSION}}
+    style={{width: width || ICON_DIMENSION, height: height || ICON_DIMENSION}}
     src={src}
-    alt="Generace s názorem | Facebook"
+    alt={alt || "Generace s názorem"}
+    {...rest}
   />
 
 export default Icon

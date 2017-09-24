@@ -3,9 +3,9 @@ import {FACEBOOK_LINK} from "../services/consts"
 
 import { ICON_DIMENSION } from "../services/styleTools"
 
-const Facebook = ({ href }) =>
+const Facebook = ({ href, ...rest }) =>
 
-  <a href={href || FACEBOOK_LINK}>
+  <a href={href || FACEBOOK_LINK} {...rest}>
     <img
       style={{width: ICON_DIMENSION, height: ICON_DIMENSION}}
       src="./fb.svg"

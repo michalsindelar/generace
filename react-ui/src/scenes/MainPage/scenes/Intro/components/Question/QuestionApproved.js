@@ -4,23 +4,28 @@ import React from "react"
 import { QuestionSubtitle } from "./index"
 import { UnstyledLink } from "../../../../../../services/styleTools"
 import {CREATE_AVATAR_LINK} from "../../../../../../services/consts"
+import Facebook from "../../../../../../components/Facebook"
+import Instagram from "../../../../../../components/Instagram"
+import Icon from "../../../../../../components/Icon"
+import LabelLink from "../../../../../../components/LabelLink"
 
 
 const QuestionApproved = ({}) =>
-  <div>
+  <div style={{marginTop: "50px"}}>
     <QuestionSubtitle>
-      Chci sdělit, že volím
+      Dej o sobě vědět.
     </QuestionSubtitle>
 
-    <p>A motivovat tak ostatní.</p>
+    <p>Sleduj stránku Generace s názorem</p>
+    <Facebook style={{marginRight: "40px"}}/>
+    <Instagram />
 
-    <p>Sdílet stránku Generace s názorem</p>
-    <div>logos</div>
+    <div style={{marginBottom: "30px"}}>
+      <p style={{marginTop: "100px"}}>Řekni o sobě, že máš názor.</p>
+      <Icon src={"./profile-picture-generation.svg"} width="200px" height="70px" />
+    </div>
 
-    <p>Vytvořit profilovou fotku Generace s názorem.</p>
-    <QuestionSubtitle>
-      <UnstyledLink href={CREATE_AVATAR_LINK}>ZDE!</UnstyledLink>
-    </QuestionSubtitle>
+    <LabelLink href={CREATE_AVATAR_LINK}>Generátor profilovky!</LabelLink>
   </div>
 
 export default QuestionApproved

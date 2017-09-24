@@ -17,8 +17,8 @@ const LabelLinkStyl = styled.a`
   text-decoration: none;
 `
 
-const LabelLink = ({ href,children }) =>
-  <LabelLinkStylWrapper>
+const LabelLink = ({ href, children, ...rest }) =>
+  <LabelLinkStylWrapper {...rest}>
     <LabelLinkStyl href={href || ""}>
       {children}
     </LabelLinkStyl>
