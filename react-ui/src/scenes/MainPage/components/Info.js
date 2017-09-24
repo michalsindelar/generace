@@ -11,6 +11,7 @@ const Page = styled.div`
   max-width: 100%;
   margin: 0 auto;
   padding-top: 5%;
+  font-size: 14px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     display: block;

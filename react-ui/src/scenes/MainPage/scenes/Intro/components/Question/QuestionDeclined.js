@@ -2,10 +2,17 @@
 import React from "react"
 
 import QuestionBlock from "./QuestionBlock"
-import {MAPA_VOLEBNICH_LINK, ONLINE_VOLEBNI_PRUKAZ_LINK, VOLEBNI_CALC_LINK} from "../../../../../../services/consts"
+
+import {
+  MAPA_VOLEBNICH_LINK,
+  ONLINE_VOLEBNI_PRUKAZ_LINK,
+  VOLEBNI_CALC_LINK,
+} from "../../../../../../services/consts"
+
+import { SecondaryColorStyl } from "../../../../../../services/styleTools"
 
 const QuestionDeclined = () =>
-  <div>
+  <SecondaryColorStyl>
     <QuestionBlock
       title="Politika mě nezajímá,"
       text="Je mi jedno jestli budu žít v demokracii, nebo totalitě."
@@ -39,7 +46,7 @@ const QuestionDeclined = () =>
       }}
     />
 
-  </div>
+  </SecondaryColorStyl>
 
 export default QuestionDeclined
 

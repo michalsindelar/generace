@@ -2,16 +2,15 @@
 import React from "react"
 
 import { QuestionSubtitle } from "./index"
-import { UnstyledLink } from "../../../../../../services/styleTools"
 import {CREATE_AVATAR_LINK} from "../../../../../../services/consts"
 import Facebook from "../../../../../../components/Facebook"
 import Instagram from "../../../../../../components/Instagram"
 import Icon from "../../../../../../components/Icon"
 import LabelLink from "../../../../../../components/LabelLink"
-
+import { SecondaryColorStyl, PALETTE } from "../../../../../../services/styleTools"
 
 const QuestionApproved = ({}) =>
-  <div style={{marginTop: "50px"}}>
+  <SecondaryColorStyl style={{marginTop: "50px", color: PALETTE.SECONDARY}}>
     <QuestionSubtitle>
       Dej o sobě vědět.
     </QuestionSubtitle>
@@ -26,7 +25,7 @@ const QuestionApproved = ({}) =>
     </div>
 
     <LabelLink href={CREATE_AVATAR_LINK}>Generátor profilovky!</LabelLink>
-  </div>
+  </SecondaryColorStyl>
 
 export default QuestionApproved
 

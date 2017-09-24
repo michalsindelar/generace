@@ -19,12 +19,11 @@ const QuestionStyl = styled.div`
     width: 100%;
     padding-top: 20px;
   `}
-
 `
 
 export const QuestionTitle = styled.h2`
   font-size: 25px;
-  color: ${PALETTE.secondary};
+  color: ${PALETTE.SECONDARY};
   font-weight: 700;
   margin-bottom: 5px;
 
@@ -32,7 +31,7 @@ export const QuestionTitle = styled.h2`
 
 export const QuestionSubtitle = styled.h2`
   font-size: 20px;
-  color: ${PALETTE.secondary};
+  color: ${PALETTE.SECONDARY};
   font-weight: 700;
   margin-bottom: 5px;
 `

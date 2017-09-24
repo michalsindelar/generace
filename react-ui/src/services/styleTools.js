@@ -49,6 +49,10 @@ export const UnstyledLink = styled.a`
   text-decoration: none;
 `
 
+export const SecondaryColorStyl = styled.div`
+  color: ${PALETTE.SECONDARY};
+`
+
 export const isLtDesktopBig = () => {
   return window && window.innerWidth <= SIZES.DESKTOP
 }
