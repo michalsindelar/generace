@@ -31,11 +31,10 @@ const IntroCenter = styled.div`
   width: 40%;
   min-width: 200px;
   text-align: center;
-  margin-top: 25%;
+  margin-top: 100px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     width: 100%;
-    padding-top: 80px;
   `}
 `
 
@@ -45,13 +44,13 @@ const IntroLogoStyl = styled.img`
   max-width: 260px;
   cursor: pointer;
   animation: 1s ${ANIMATION.pulse} alternate infinite;
+  margin-top: 20%;
 `
 
 const IntroHeaderStyl = styled.h1`
   color: ${PALETTE.SECONDARY};
   font-size: 60px;
   clear: both;
-  margin-top: -20px;
   height: 30px;
   margin-bottom: 150px;
   

@@ -49,7 +49,8 @@ const QuestionDeclined = () =>
         },
         {
           href: DEMAGOG,
-          label: "Komu věřit?"
+          label: "Komu věřit?",
+          hover: "Demagog.cz"
         }
       ]}
     />

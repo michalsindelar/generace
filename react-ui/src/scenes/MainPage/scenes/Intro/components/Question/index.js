@@ -11,13 +11,14 @@ const QuestionStyl = styled.div`
   display: flex;
   height: 100%;
   width: 30%;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   font-size: 14px;
+  padding-top: 200px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     width: 100%;
-    padding-top: 20px;
+    padding-top: 80px;
   `}
 `
 
@@ -68,8 +69,8 @@ class Question extends Component {
 
 
     const head = view === "approved"
-      ? <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "center" : "right"}} title="JDU" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
-      : <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "center" : "left"}} title="NEJDU" subtitle="Proč?" toggleDialog={this.toggleDialog} />
+      ? <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "left" : "right"}} title="JDU" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
+      : <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "left" : "left"}} title="NEJDU" subtitle="Proč?" toggleDialog={this.toggleDialog} />
 
     return (
       <QuestionStyl style={{textAlign: (view === "approved" && !isLtDesktopBig()) ? "right" : "left"}}>

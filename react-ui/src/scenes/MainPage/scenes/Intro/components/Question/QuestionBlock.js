@@ -75,7 +75,7 @@ class QuestionBlock extends Component {
         {open && labels &&
           <div style={{marginTop: PADDING, marginLeft: PADDING }}>
             {labels.map(label =>
-              <LabelLink href={label.href} style={{marginRight: PADDING}}>
+              <LabelLink href={label.href} style={{marginRight: PADDING}} hover={label.hover}>
                 {label.label}
               </LabelLink>
             )}
