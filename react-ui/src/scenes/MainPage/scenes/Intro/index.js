@@ -2,7 +2,7 @@
 import React, { Component } from "react"
 import FullscreenSlide from "../../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {ANIMATION, isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE} from "../../../../services/styleTools"
+import {ANIMATION, isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE, FadeInComp} from "../../../../services/styleTools"
 import Question from "./components/Question/index"
 
 const IntroStyl = styled.div`
@@ -30,6 +30,7 @@ const IntroCenter = styled.div`
   flex-direction: column;
   height: 100%;
   width: 40%;
+  min-width: 200px;
   text-align: center;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
@@ -52,6 +53,7 @@ const IntroHeaderStyl = styled.h1`
   clear: both;
   margin-top: -20px;
   margin-bottom: 150px;
+  height: 30px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     font-size: 40px;
@@ -64,7 +66,7 @@ class Intro extends Component {
     super(props)
 
     this.state = {
-      open: true,
+      open: false,
     };
   }
 
@@ -88,8 +90,11 @@ class Intro extends Component {
       alt="Generace s názorem | Volební urna"
     />
 
-    const centerText = <IntroHeaderStyl>Jdeš volit?</IntroHeaderStyl>
-    const center = <IntroCenter><div>{centerText}{centerLogo}</div></IntroCenter>
+    const centerText = open
+      ? <FadeInComp><IntroHeaderStyl>Jdeš volit?</IntroHeaderStyl></FadeInComp>
+      : <IntroHeaderStyl></IntroHeaderStyl>
+
+    const center = <IntroCenter>{centerText}{centerLogo}</IntroCenter>
 
     return (
       <FullscreenSlide className="Attendance">
