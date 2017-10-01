@@ -19,7 +19,7 @@ const LabelLinkStyl = styled.a`
 
 const LabelLink = ({ href, children, ...rest }) =>
   <LabelLinkStylWrapper {...rest}>
-    <LabelLinkStyl href={href || ""}>
+    <LabelLinkStyl href={href || ""} rel="noreferrer noopener" target="_blank">
       {children}
     </LabelLinkStyl>
   </LabelLinkStylWrapper>
