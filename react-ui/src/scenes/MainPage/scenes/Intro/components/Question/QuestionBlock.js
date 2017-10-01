@@ -39,7 +39,7 @@ class QuestionBlock extends Component {
     super(props);
 
     this.state = {
-      open: false
+      open: true
     };
   }
 
@@ -50,7 +50,7 @@ class QuestionBlock extends Component {
   }
 
   render() {
-    const { title, text, extraTest, label, ...rest } = this.props
+    const { title, text, extraTest, labels, ...rest } = this.props
     const { open } = this.state
 
     return (
@@ -72,9 +72,13 @@ class QuestionBlock extends Component {
 
         </QuestionBlockStyl>
 
-        {open && label &&
-          <div style={{marginTop: PADDING, marginLeft: PADDING, }}>
-            <LabelLink href={label.href}>{label.label}</LabelLink>
+        {open && labels &&
+          <div style={{marginTop: PADDING, marginLeft: PADDING }}>
+            {labels.map(label =>
+              <LabelLink href={label.href} style={{marginRight: PADDING}}>
+                {label.label}
+              </LabelLink>
+            )}
           </div>
         }
 

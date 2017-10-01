@@ -4,6 +4,7 @@ import React from "react"
 import QuestionBlock from "./QuestionBlock"
 
 import {
+  DEMAGOG,
   MAPA_VOLEBNICH_LINK,
   ONLINE_VOLEBNI_PRUKAZ_LINK,
   VOLEBNI_CALC_LINK,
@@ -22,29 +23,35 @@ const QuestionDeclined = () =>
     <QuestionBlock
       title="Nemám na to čas."
       text="Jít volit zabere člověku v průměru půl hodiny, protože volební místnosti jsou všem bláízko."
-      label={{
-        href: MAPA_VOLEBNICH_LINK,
-        label: "Mapa volebních místností"
-      }}
+      labels={[
+        {
+          href: MAPA_VOLEBNICH_LINK,
+          label: "Mapa volebních místností"
+        },
+        {
+          href: DEMAGOG,
+          label: "Demagog"
+        },
+      ]}
     />
 
     <QuestionBlock
       title="Bydlím jinde, než kde mohu volit."
       text="Volební průkaz je nástroj, se kterým lze volit kdekoliv. Lze jej obdržet poštou po vyplnění elektronické žádosti."
-      label={{
+      labels={[{
         href: ONLINE_VOLEBNI_PRUKAZ_LINK,
         label: "Online voličský průkaz"
-      }}
+      }]}
     />
 
     <QuestionBlock
       title="Nevím koho."
       text="Volební kalkulačka ti poradí, s kterou stranou si rozumíš."
       style={{marginTop: "80px"}}
-      label={{
+      labels={[{
         href: VOLEBNI_CALC_LINK,
         label: "Volební kalkulačka"
-      }}
+      }]}
     />
 
   </SecondaryColorStyl>

@@ -51,7 +51,7 @@ class Question extends Component {
       openDetail: !this.state.openDetail
     })
   }
-O
+
   render() {
     const {
       open,
