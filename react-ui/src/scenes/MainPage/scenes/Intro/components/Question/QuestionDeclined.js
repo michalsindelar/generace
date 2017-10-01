@@ -16,6 +16,7 @@ const QuestionDeclined = () =>
     <QuestionBlock
       title="Politika mě nezajímá,"
       text="Je mi jedno jestli budu žít v demokracii, nebo totalitě."
+      style={{marginTop: "50px"}}
     />
 
     <QuestionBlock
