@@ -18,6 +18,7 @@ const IntroStyl = styled.div`
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     display: block;
+    min-height: 100vh;
   `}
 
 `
@@ -52,12 +53,13 @@ const IntroHeaderStyl = styled.h1`
   font-size: 60px;
   clear: both;
   margin-top: -20px;
-  margin-bottom: 150px;
   height: 30px;
+  margin-bottom: 150px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     font-size: 40px;
     margin-top: 20px;
+    margin-bottom: 60px;
   `}
 `
 
