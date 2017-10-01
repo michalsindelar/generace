@@ -41,7 +41,7 @@ const QuestionDeclined = () =>
     <QuestionBlock
       title="Nevím koho."
       text="Volební kalkulačka ti poradí, s kterou stranou si rozumíš."
-      style={{marginTop: "80px"}}
+      style={{marginTop: "50px"}}
       labels={[
         {
           href: VOLEBNI_CALC_LINK,

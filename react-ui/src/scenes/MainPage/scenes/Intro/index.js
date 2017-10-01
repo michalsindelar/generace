@@ -26,13 +26,12 @@ const IntroStyl = styled.div`
 const IntroCenter = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
   height: 100%;
   width: 40%;
   min-width: 200px;
   text-align: center;
+  margin-top: 25%;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     width: 100%;
@@ -94,7 +93,7 @@ class Intro extends Component {
 
     const centerText = open
       ? <FadeInComp><IntroHeaderStyl>Jdeš volit?</IntroHeaderStyl></FadeInComp>
-      : <IntroHeaderStyl></IntroHeaderStyl>
+      : <IntroHeaderStyl />
 
     const center = <IntroCenter>{centerText}{centerLogo}</IntroCenter>
 
