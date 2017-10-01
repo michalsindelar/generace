@@ -23,16 +23,10 @@ const QuestionDeclined = () =>
     <QuestionBlock
       title="Nemám na to čas."
       text="Jít volit zabere člověku v průměru půl hodiny, protože volební místnosti jsou všem bláízko."
-      labels={[
-        {
+      labels={[{
           href: MAPA_VOLEBNICH_LINK,
           label: "Mapa volebních místností"
-        },
-        {
-          href: DEMAGOG,
-          label: "Demagog"
-        },
-      ]}
+        }]}
     />
 
     <QuestionBlock
@@ -48,10 +42,16 @@ const QuestionDeclined = () =>
       title="Nevím koho."
       text="Volební kalkulačka ti poradí, s kterou stranou si rozumíš."
       style={{marginTop: "80px"}}
-      labels={[{
-        href: VOLEBNI_CALC_LINK,
-        label: "Volební kalkulačka"
-      }]}
+      labels={[
+        {
+          href: VOLEBNI_CALC_LINK,
+          label: "Volební kalkulačka"
+        },
+        {
+          href: DEMAGOG,
+          label: "Komu věřit?"
+        }
+      ]}
     />
 
   </SecondaryColorStyl>
