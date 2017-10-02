@@ -3,7 +3,7 @@ import React, {Component} from "react"
 import styled from "styled-components"
 
 import { QuestionSubtitle } from "./index"
-import {MEDIA_ONLY_QUERY} from "../../../../../../services/styleTools"
+import {isLtDesktopBigHeight, MEDIA_ONLY_QUERY} from "../../../../../../services/styleTools"
 import LabelLink from "../../../../../../components/LabelLink"
 
 
@@ -13,7 +13,7 @@ const PADDING = "10px"
 const QuestionBlockStylWrapper = styled.div`
   
   margin-left: -${PADDING};
-  margin-bottom: 40px;
+  margin-bottom: ${isLtDesktopBigHeight ? "15px" : "40px"};
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     margin-top: 15px;
@@ -64,7 +64,7 @@ class QuestionBlock extends Component {
             {open &&
               <div>
                 <p>{text}</p>
-                <p>{extraTest}</p>
+                {extraTest && <p>{extraTest}</p>}
               </div>
             }
 

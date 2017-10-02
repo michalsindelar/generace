@@ -2,7 +2,10 @@
 import React, { Component } from "react"
 import FullscreenSlide from "../../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {ANIMATION, isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE, FadeInComp} from "../../../../services/styleTools"
+import {
+  ANIMATION, isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE, FadeInComp,
+  isLtDesktopBigHeight
+} from "../../../../services/styleTools"
 import Question from "./components/Question/index"
 
 const IntroStyl = styled.div`
@@ -31,7 +34,7 @@ const IntroCenter = styled.div`
   width: 40%;
   min-width: 200px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     width: 100%;
@@ -44,7 +47,7 @@ const IntroLogoStyl = styled.img`
   max-width: 260px;
   cursor: pointer;
   animation: 1s ${ANIMATION.pulse} alternate infinite;
-  margin-top: 20%;
+  margin-top: ${isLtDesktopBigHeight ? "0" : "20%"};
 `
 
 const IntroHeaderStyl = styled.h1`
@@ -56,7 +59,7 @@ const IntroHeaderStyl = styled.h1`
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 60px;
   `}
 `

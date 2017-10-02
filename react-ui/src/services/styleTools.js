@@ -10,6 +10,10 @@ export const SIZES = {
   PHONE: 376
 }
 
+export const SIZES_HEIGHT = {
+  DESKTOP_BIG: 900,
+}
+
 export const ICON_DIMENSION = "34px"
 
 // iterate through the sizes and create a MEDIA_ONLY_QUERY template
@@ -56,3 +60,5 @@ export const SecondaryColorStyl = styled.div`
 export const isLtDesktopBig = () => {
   return window && window.innerWidth <= SIZES.DESKTOP
 }
+
+export const isLtDesktopBigHeight = window && window.innerHeight <= SIZES_HEIGHT.DESKTOP_BIG

@@ -4,7 +4,10 @@ import styled from 'styled-components';
 import QuestionApproved from "./QuestionApproved"
 import QuestionDeclined from "./QuestionDeclined"
 import QuestionHead from "./QuestionHead"
-import {isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE, FadeInComp} from "../../../../../../services/styleTools"
+import {
+  isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE, FadeInComp,
+  isLtDesktopBigHeight
+} from "../../../../../../services/styleTools"
 import Icon from "../../../../../../components/Icon"
 
 const QuestionStyl = styled.div`
@@ -13,10 +16,11 @@ const QuestionStyl = styled.div`
   width: 30%;
   justify-content: flex-start;
   flex-direction: column;
-  font-size: 14px;
-  padding-top: 200px;
+  font-size: ${isLtDesktopBigHeight ? "12px" : "14px"};
+  padding-top: 110px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
+    font-size: 14px;
     width: 100%;
     padding-top: 80px;
   `}

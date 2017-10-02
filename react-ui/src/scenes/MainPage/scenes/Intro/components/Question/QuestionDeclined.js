@@ -10,14 +10,18 @@ import {
   VOLEBNI_CALC_LINK,
 } from "../../../../../../services/consts"
 
-import { SecondaryColorStyl } from "../../../../../../services/styleTools"
+import {isLtDesktopBigHeight, SecondaryColorStyl} from "../../../../../../services/styleTools"
+
+const topMarginStyle = {
+  marginTop: isLtDesktopBigHeight ? "0px" : "50px"
+}
 
 const QuestionDeclined = () =>
   <SecondaryColorStyl>
     <QuestionBlock
       title="Politika mě nezajímá,"
       text="Je mi jedno jestli budu žít v demokracii, nebo totalitě."
-      style={{marginTop: "50px"}}
+      style={topMarginStyle}
     />
 
     <QuestionBlock
@@ -41,7 +45,7 @@ const QuestionDeclined = () =>
     <QuestionBlock
       title="Nevím koho."
       text="Volební kalkulačka ti poradí, s kterou stranou si rozumíš."
-      style={{marginTop: "50px"}}
+      style={topMarginStyle}
       labels={[
         {
           href: VOLEBNI_CALC_LINK,
