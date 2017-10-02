@@ -6,7 +6,7 @@ import QuestionDeclined from "./QuestionDeclined"
 import QuestionHead from "./QuestionHead"
 import {
   isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE, FadeInComp,
-  isLtDesktopBigHeight
+  isLtDesktopBigHeight, ANIMATION
 } from "../../../../../../services/styleTools"
 import Icon from "../../../../../../components/Icon"
 
@@ -39,6 +39,7 @@ export const QuestionSubtitle = styled.h2`
   color: ${PALETTE.SECONDARY};
   font-weight: 700;
   margin-bottom: 5px;
+  animation: ${ANIMATION.fadeIn} 1s;
 `
 
 
@@ -47,14 +48,21 @@ class Question extends Component {
     super(props)
 
     this.state = {
-      openDetail: true,
+      openSubtitle: false,
+      openDetail: false,
     };
   }
 
   toggleDialog = () => {
     this.setState({
-      openDetail: !this.state.openDetail
+      openSubtitle: !this.state.openSubtitle
     })
+
+    setTimeout(() => {
+      this.setState({
+        openDetail: !this.state.openDetail
+      })
+    }, 1000)
   }
 
   render() {
@@ -64,7 +72,8 @@ class Question extends Component {
     } = this.props
 
     const {
-      openDetail
+      openDetail,
+      openSubtitle
     } = this.state
 
     const body = view === "approved"
@@ -73,8 +82,22 @@ class Question extends Component {
 
 
     const head = view === "approved"
-      ? <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "left" : "right"}} title="JDU" subtitle="Mám názor." toggleDialog={this.toggleDialog} />
-      : <QuestionHead view={view} style={{textAlign: isLtDesktopBig() ? "left" : "left"}} title="NEJDU" subtitle="Proč?" toggleDialog={this.toggleDialog} />
+      ? <QuestionHead
+          view={view}
+          style={{textAlign: isLtDesktopBig() ? "left" : "right"}}
+          title="JDU"
+          subtitle="Mám názor."
+          toggleDialog={this.toggleDialog}
+          showSubtitle={openSubtitle}
+        />
+      : <QuestionHead
+        view={view}
+        style={{textAlign: isLtDesktopBig() ? "left" : "left"}}
+        title="NEJDU"
+        subtitle="Proč?"
+        toggleDialog={this.toggleDialog}
+        showSubtitle={openSubtitle}
+        />
 
     return (
       <QuestionStyl style={{textAlign: (view === "approved" && !isLtDesktopBig()) ? "right" : "left"}}>

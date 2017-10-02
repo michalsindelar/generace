@@ -17,11 +17,11 @@ const extraStyle = {
   marginLeft: isLtDesktopBigHeight ? "15px" : "initial"
 }
 
-const QuestionHead = ({ title, subtitle, toggleDialog, view, ...rest }) =>
+const QuestionHead = ({ title, subtitle, toggleDialog, view, showSubtitle, ...rest }) =>
   <QuestionHeadStyl onClick={toggleDialog} {...rest}>
     <Icon src={`./${view}.svg`} />
     <QuestionTitle style={extraStyle}>{title}</QuestionTitle>
-    <QuestionSubtitle style={extraStyle}>{subtitle}</QuestionSubtitle>
+    {showSubtitle && <QuestionSubtitle style={extraStyle}>{subtitle}</QuestionSubtitle>}
   </QuestionHeadStyl>
 
 
