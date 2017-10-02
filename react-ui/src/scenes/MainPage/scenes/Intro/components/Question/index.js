@@ -8,7 +8,6 @@ import {
   isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE, FadeInComp,
   isLtDesktopBigHeight, ANIMATION
 } from "../../../../../../services/styleTools"
-import Icon from "../../../../../../components/Icon"
 
 const QuestionStyl = styled.div`
   display: flex;
