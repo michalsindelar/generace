@@ -27,11 +27,15 @@ const QuestionStyl = styled.div`
 `
 
 export const QuestionTitle = styled.h2`
-  font-size: 25px;
+  font-size: 45px;
   color: ${PALETTE.SECONDARY};
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+  margin-top: 3px;
 
+  ${MEDIA_ONLY_QUERY.DESKTOP`
+    font-size: 25px;
+  `}
 `
 
 export const QuestionSubtitle = styled.h2`

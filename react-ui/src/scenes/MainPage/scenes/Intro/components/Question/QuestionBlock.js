@@ -13,7 +13,7 @@ const PADDING = "10px"
 const QuestionBlockStylWrapper = styled.div`
   
   margin-left: -${PADDING};
-  margin-bottom: ${isLtDesktopBigHeight ? "15px" : "40px"};
+  margin-bottom: ${isLtDesktopBigHeight ? "15px" : "60px"};
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     margin-top: 15px;
@@ -59,11 +59,19 @@ class QuestionBlock extends Component {
           {...rest}
         >
           <div onClick={this.toggleText}>
-            <QuestionSubtitle style={{marginTop: 0}}>{title}</QuestionSubtitle>
+
+            <QuestionSubtitle
+              style={{
+                marginTop: 0,
+                marginBottom: 0
+              }}
+            >
+              {title}
+            </QuestionSubtitle>
 
             {open &&
               <div>
-                <p>{text}</p>
+                <p style={{marginTop: "2px", marginBottom: "2px"}}>{text}</p>
                 {extraTest && <p>{extraTest}</p>}
               </div>
             }
