@@ -28,6 +28,8 @@ const MainPage = () => {
         </div> :
 
         <FullPage>
+          <Intro />
+          <Attendance />
           <People />
           <Info />
           <Appendix />
