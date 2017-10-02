@@ -9,3 +9,18 @@ export const DEMAGOG = "http://demagog.cz"
 
 export const INFO_EMAIL = "info@generacesnazorem.cz"
 export const AUTHOR = "Jakub Ondráček"
+
+export const PEOPLE = {
+  ao: {
+    name: "Adam Ondra",
+    profession: "lezec",
+  },
+  lz: {
+    name: "Ladislav Zibura",
+    profession: "cestovatel",
+  },
+  fh: {
+    name: "Filip Horký",
+    profession: "žurnalista",
+  },
+}

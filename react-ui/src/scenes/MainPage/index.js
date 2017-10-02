@@ -8,6 +8,7 @@ import Attendance from "./components/Attendance"
 import Header from "../../components/Header"
 import Info from "./components/Info"
 import Intro from "./scenes/Intro/index"
+import People from "./scenes/People/index"
 import {isLtDesktopBig} from "../../services/styleTools"
 
 const MainPage = () => {
@@ -21,13 +22,13 @@ const MainPage = () => {
         <div>
           <Intro />
           <Attendance />
+          <People />
           <Info />
           <Appendix />
         </div> :
 
         <FullPage>
-          <Intro />
-          <Attendance />
+          <People />
           <Info />
           <Appendix />
         </FullPage>
