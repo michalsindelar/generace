@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import {MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
 import Facebook from "../../../components/Facebook"
 import {AUTHOR, INFO_EMAIL} from "../../../services/consts"
+import Instagram from "../../../components/Instagram"
 
 const AppendixStyl = styled.div`
   display: flex;
@@ -42,7 +43,10 @@ const Appendix = () =>
       <AppendixTitle>Mám názor.</AppendixTitle>
       <AppendixTitle>Jdu volit.</AppendixTitle>
 
-      <div style={{marginTop: "40px"}}><Facebook /></div>
+      <div style={{marginTop: "40px"}}>
+        <Facebook style={{marginRight: "10px"}}/>
+        <Instagram style={{marginLeft: "10px"}}/>
+      </div>
     </AppendixStyl>
 
   </FullscreenSlide>
