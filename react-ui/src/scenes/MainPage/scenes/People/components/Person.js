@@ -7,6 +7,7 @@ import {MEDIA_ONLY_QUERY} from "../../../../../services/styleTools"
 const PersonStyl = styled.div`
   width: 33.3%;
   padding-top: 10%;
+  cursor: pointer;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`
     padding-top: 40px;
@@ -29,8 +30,8 @@ const PersonFooterStyl = styled.div`
   text-align: center;
 `
 
-const Person = ({ imgKey, name, profession }) =>
-  <PersonStyl className={`Person`}>
+const Person = ({ imgKey, name, profession, fbPost }) =>
+  <PersonStyl className={`Person`} onClick={() => {window.open(fbPost)}}>
     <div>
       <PersonImgStyl src={`./people/${imgKey}.jpg`} alt={name} />
       <PersonFooterStyl>

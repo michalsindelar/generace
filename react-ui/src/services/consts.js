@@ -14,13 +14,16 @@ export const PEOPLE = {
   ao: {
     name: "Adam Ondra",
     profession: "lezec",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/117390622265540/?type=3",
   },
   lz: {
     name: "Ladislav Zibura",
     profession: "cestovatel",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/117909532213649/?type=3",
   },
   fh: {
     name: "Filip Horký",
     profession: "žurnalista",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/119213058749963/?type=3",
   },
 }
