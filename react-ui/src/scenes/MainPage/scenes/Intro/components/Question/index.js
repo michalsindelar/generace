@@ -31,6 +31,9 @@ export const QuestionTitle = styled.h2`
   font-weight: 700;
   margin-bottom: 3px;
   margin-top: 3px;
+  animation: 1s ${ANIMATION.pulse};
+  animation-iteration-count: 2;
+
 
   ${MEDIA_ONLY_QUERY.DESKTOP`
     font-size: 25px;
