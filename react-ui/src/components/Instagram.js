@@ -3,9 +3,9 @@ import { INSTAGRAM_LINK} from "../services/consts"
 
 import { ICON_DIMENSION } from "../services/styleTools"
 
-const Instagram = ({ href }) =>
+const Instagram = ({ href, ...rest }) =>
 
-  <a href={href || INSTAGRAM_LINK}>
+  <a href={href || INSTAGRAM_LINK} rel="noreferrer noopener" target="blank" {...rest}>
     <img
       style={{width: ICON_DIMENSION, height: ICON_DIMENSION}}
       src="./insta.svg"
