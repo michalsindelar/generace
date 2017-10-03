@@ -10,7 +10,7 @@ const HeaderStyl = styled.div`
   top: 0; left: 0; right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 15px 0;
 
   height: 34px;
   width: 100%;

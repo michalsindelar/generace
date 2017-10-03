@@ -2,11 +2,10 @@
 import React from "react"
 
 import styled from 'styled-components';
-import {MEDIA_ONLY_QUERY} from "../../../../../services/styleTools"
+import {MEDIA_ONLY_QUERY, isLtDesktopBigHeight} from "../../../../../services/styleTools"
 
 const PersonStyl = styled.div`
   width: 33.3%;
-  padding-top: 10%;
   cursor: pointer;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`
@@ -24,6 +23,12 @@ const PersonImgStyl = styled.img`
   }
 `
 
+const PersonImgWrapperStyl = styled.div`
+  max-height: 70vh;
+  overflow: hidden;
+`
+
+
 const PersonFooterStyl = styled.div`
   padding-top: 15px;
   color: white;
@@ -31,9 +36,17 @@ const PersonFooterStyl = styled.div`
 `
 
 const Person = ({ imgKey, name, profession, fbPost }) =>
-  <PersonStyl className={`Person`} onClick={() => {window.open(fbPost)}}>
+  <PersonStyl
+    className={`Person`}
+    onClick={() => {window.open(fbPost)}}
+    style={{paddingTop: isLtDesktopBigHeight ? "0" : "10%"}}
+  >
     <div>
-      <PersonImgStyl src={`./people/${imgKey}.jpg`} alt={name} />
+
+      <PersonImgWrapperStyl>
+        <PersonImgStyl src={`./people/${imgKey}.jpg`} alt={name} />
+      </PersonImgWrapperStyl>
+
       <PersonFooterStyl>
         <div style={{fontSize: "30px", marginBottom: "5px"}}>{name}</div>
         <div>{profession}</div>

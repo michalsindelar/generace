@@ -7,7 +7,7 @@ import MainPage from './scenes/MainPage';
 const Root = () =>
   <Switch>
 
-    <Route path="/" component={MainPage} exact />
+    <Route path="/" component={MainPage} />
 
   </Switch>;
 

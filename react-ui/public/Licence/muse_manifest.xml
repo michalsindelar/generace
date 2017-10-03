@@ -1,0 +1,136 @@
+<manifest alg="2" build="2017.0.3.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="generacesnazorem.cz" resolutions="1x" timestamp="1507046424665">
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="index.css" crc="515850014" ref="index"/>
+    <file name="varianta-b.css" crc="321220224" ref="varianta-b"/>
+    <file name="varianta-a.css" crc="3891097273" ref="varianta-a"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="varianta-a:varianta-b:index"/>
+    <file name="museutils.js" crc="46400467" ref="varianta-a:varianta-b:index"/>
+    <file name="whatinput.js" crc="86476730" ref="varianta-a:varianta-b:index"/>
+    <file name="museconfig.js" crc="4273287925" ref="varianta-a:varianta-b:index"/>
+    <file name="jquery.watch.js" crc="4178585335" ref="varianta-a:varianta-b:index"/>
+    <file name="require.js" crc="85721165" ref="varianta-a:varianta-b:index"/>
+  </folder>
+  <folder name="images">
+    <file name="artwork 15.png" crc="4141627474" seo="true" ref="varianta-a:varianta-b:index">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 21.png" crc="437871510" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 8.png" crc="3914896771" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 9.png" crc="4168065884" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 7.png" crc="4066962691" seo="true" ref="varianta-a">
+      <caption webpage="varianta-a" alt=""/>
+    </file>
+    <file name="artwork 6.png" crc="478836509" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 5.png" crc="480395496" seo="true" ref="varianta-a">
+      <caption webpage="varianta-a" alt=""/>
+    </file>
+    <file name="artwork 1.png" crc="478368770" seo="true" ref="varianta-a">
+      <caption webpage="varianta-a" alt=""/>
+    </file>
+    <file name="artwork 13.png" crc="4029701852" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 14.jpg" crc="3828426321" seo="true" ref="varianta-a">
+      <caption webpage="varianta-a" alt=""/>
+    </file>
+    <file name="artwork 18.png" crc="157005451" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 17.png" crc="189460639" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 16.png" crc="3777069802" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 12.png" crc="173241665" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 2.png" crc="4034250528" seo="true" ref="varianta-a">
+      <caption webpage="varianta-a" alt=""/>
+    </file>
+    <file name="artwork 19.png" crc="399572286" seo="true" ref="varianta-a:varianta-b:index">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 20.png" crc="3912734217" seo="true" ref="varianta-a">
+      <caption webpage="varianta-a" alt=""/>
+    </file>
+    <file name="artwork 10.png" crc="533975506" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 11.png" crc="456100782" seo="true" ref="varianta-a:varianta-b">
+      <caption webpage="varianta-a" alt=""/>
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 24.png" crc="102660710" seo="true" ref="varianta-b">
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 23.png" crc="223721108" seo="true" ref="varianta-b">
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="artwork 22.png" crc="3792091122" seo="true" ref="varianta-b">
+      <caption webpage="varianta-b" alt=""/>
+    </file>
+    <file name="asset 32@2x.png" crc="4116180136" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="artwork 21-crop-u4192.png" crc="3955340609" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="artwork 21-crop-u4178.png" crc="3955340609" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="asset 31@2x.png" crc="3896835203" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="asset 30@2x.png" crc="4038955089" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="artwork 21-crop-u4150.png" crc="3955340609" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="artwork 21-crop-u4164.png" crc="3955340609" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="varianta-a.html" crc="4132313080" seo="true" mt="1507046115574" redirect="true"/>
+  <file name="varianta-b.html" crc="3446056" seo="true" mt="1507045789770" redirect="true"/>
+  <file name="index.html" crc="532712646" seo="true" mt="1507046337653" redirect="true"/>
+</manifest>

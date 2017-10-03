@@ -2,16 +2,13 @@
 import React from "react"
 import FullscreenSlide from "../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
+import {isLtDesktopBigHeight, MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
 
 const Page = styled.div`
   display: flex;
-  // flex-direction: column;
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 5%;
-  font-size: 14px;
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     display: block;
@@ -46,7 +43,12 @@ const IntroHeadSnd = styled.h2`
 const Info = () =>
   <FullscreenSlide className="Info">
 
-    <Page>
+    <Page
+      style={{
+        paddingTop: isLtDesktopBigHeight ? "30px" : "5%",
+        fontSize: isLtDesktopBigHeight ? "12px" : "14px"
+      }}
+    >
 
       <IntroCol>
 
