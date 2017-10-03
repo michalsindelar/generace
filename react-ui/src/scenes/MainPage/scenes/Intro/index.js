@@ -46,8 +46,11 @@ const IntroLogoStyl = styled.img`
   font-size: 20px;
   max-width: 260px;
   cursor: pointer;
-  animation: 1s ${ANIMATION.pulse} alternate infinite;
   margin-top: ${isLtDesktopBigHeight ? "0" : "20%"};
+`
+
+const IntroLogoAnimatedStyl = IntroLogoStyl.extend`
+  animation: 1s ${ANIMATION.pulse} alternate infinite;
 `
 
 const IntroHeaderStyl = styled.h1`
@@ -87,11 +90,18 @@ class Intro extends Component {
     const approved = <Question view="approved" open={open} />
     const declined = <Question view="declined" open={open} />
 
-    const centerLogo = <IntroLogoStyl
-      onClick={this.toggleQuestions}
-      src="urna.png"
-      alt="Generace s názorem | Volební urna"
-    />
+    // Animation only in case of closed Questions
+    const centerLogo = open ?
+      <IntroLogoStyl
+        onClick={this.toggleQuestions}
+        src="urna.png"
+        alt="Generace s názorem | Volební urna"
+      /> :
+      <IntroLogoAnimatedStyl
+        onClick={this.toggleQuestions}
+        src="urna.png"
+        alt="Generace s názorem | Volební urna"
+      />
 
     const centerText = open
       ? <FadeInComp><IntroHeaderStyl>Jdeš volit?</IntroHeaderStyl></FadeInComp>
