@@ -89,7 +89,7 @@ class Intro extends Component {
 
     const centerLogo = <IntroLogoStyl
       onClick={this.toggleQuestions}
-      src="urna.svg"
+      src="urna.png"
       alt="Generace s názorem | Volební urna"
     />
 
