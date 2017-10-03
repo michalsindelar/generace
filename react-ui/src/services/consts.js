@@ -4,7 +4,7 @@ export const INSTAGRAM_LINK = "https://www.instagram.com/generacesnazorem/"
 
 export const VOLEBNI_CALC_LINK = "https://volebnikalkulacka.cz/"
 export const MAPA_VOLEBNICH_LINK = "https://volby.tmapy.cz/"
-export const ONLINE_VOLEBNI_PRUKAZ_LINK = "./volicskyPrukaz/"
+export const ONLINE_VOLEBNI_PRUKAZ_LINK = "./volicsky-prukaz/"
 export const DEMAGOG = "http://demagog.cz"
 
 export const INFO_EMAIL = "info@generacesnazorem.cz"
