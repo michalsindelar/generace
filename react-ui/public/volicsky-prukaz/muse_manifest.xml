@@ -1,9 +1,9 @@
-<manifest alg="2" build="2017.0.3.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="generacesnazorem.cz" resolutions="1x" timestamp="1507046424665">
+<manifest alg="2" build="2017.0.3.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="generacesnazorem.cz" resolutions="1x" timestamp="1507066639709">
   <folder name="css">
     <file name="site_global.css" crc="443350757"/>
-    <file name="index.css" crc="515850014" ref="index"/>
-    <file name="varianta-b.css" crc="321220224" ref="varianta-b"/>
-    <file name="varianta-a.css" crc="3891097273" ref="varianta-a"/>
+    <file name="index.css" crc="397730511" ref="index"/>
+    <file name="varianta-b.css" crc="354497549" ref="varianta-b"/>
+    <file name="varianta-a.css" crc="242011824" ref="varianta-a"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="varianta-a:varianta-b:index"/>
@@ -130,7 +130,7 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="varianta-a.html" crc="4132313080" seo="true" mt="1507046115574" redirect="true"/>
-  <file name="varianta-b.html" crc="3446056" seo="true" mt="1507045789770" redirect="true"/>
-  <file name="index.html" crc="532712646" seo="true" mt="1507046337653" redirect="true"/>
+  <file name="varianta-a.html" crc="4052481718" seo="true" mt="1507066599399" redirect="true"/>
+  <file name="varianta-b.html" crc="3961663921" seo="true" mt="1507066606420" redirect="true"/>
+  <file name="index.html" crc="3873362353" seo="true" mt="1507066501225" redirect="true"/>
 </manifest>
