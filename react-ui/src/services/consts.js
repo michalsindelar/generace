@@ -23,7 +23,7 @@ export const PEOPLE = {
   },
   fh: {
     name: "Filip Horký",
-    profession: "žurnalista",
+    profession: "novinář",
     fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/119213058749963/?type=3",
   },
   es: {
