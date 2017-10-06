@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import {MEDIA_ONLY_QUERY, isLtDesktopBigHeight} from "../../../../../services/styleTools"
 
 const PersonStyl = styled.div`
-  width: 33.3%;
+  width: 25%;
   cursor: pointer;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`

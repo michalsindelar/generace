@@ -16,7 +16,7 @@ const HeaderStyl = styled.div`
   width: 100%;
   max-width: 100%;
 
-  font-size: 24px;
+  font-size: 24px;s
   font-weight: 600;
 
   color: ${PALETTE.SECONDARY};

@@ -26,4 +26,9 @@ export const PEOPLE = {
     profession: "žurnalista",
     fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/119213058749963/?type=3",
   },
+  es: {
+    name: "Emma Smetana",
+    profession: "zpěvačka / novinářka",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/119820575355878/?type=3",
+  },
 }
