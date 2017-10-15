@@ -1,3 +1,3 @@
 export default {
-  profile_picture_enabled: false,
+  profile_picture_enabled: true,
 }

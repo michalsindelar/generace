@@ -26,7 +26,13 @@ const QuestionApproved = ({}) =>
         <p style={{marginTop: "100px"}}>Řekni o sobě, že máš názor.</p>
         <Icon src={"./profile-picture-generation.svg"} width="200px" height="70px" />
 
-        <LabelLink href={CREATE_AVATAR_LINK}>Generátor profilovky!</LabelLink>
+        <LabelLink
+          style={{display: "inline-block"}}
+          href={CREATE_AVATAR_LINK}
+        >
+          Generátor profilovky!
+        </LabelLink>
+
       </div>
 
     }
