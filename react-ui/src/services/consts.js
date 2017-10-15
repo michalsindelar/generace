@@ -36,4 +36,9 @@ export const PEOPLE = {
     profession: "herečka",
     fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/120704628600806/?type=3",
   },
+  jk: {
+    name: "Jakub Krejčík",
+    profession: "hokejista",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/121269518544317/?type=3",
+  },
 }

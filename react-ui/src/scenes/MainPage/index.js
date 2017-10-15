@@ -33,7 +33,7 @@ const MainPage = () => {
           <Intro />
           <Attendance />
           <People people={R.pick(["ao", "lz", "fh"], PEOPLE)} />
-          <People people={R.pick(["es", "ej"], PEOPLE)} />
+          <People people={R.pick(["es", "ej", "jk"], PEOPLE)} />
           <Info />
           <Appendix />
         </FullPage>
