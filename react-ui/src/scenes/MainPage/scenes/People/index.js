@@ -21,11 +21,11 @@ const PeopleStyl = styled.div`
   `}
 `
 
-const People = () =>
+const People = ({ people = PEOPLE }) =>
   <FullscreenSlide className="Attendance">
     <PeopleStyl>
-      {Object.keys(PEOPLE).map(key =>
-        <Person imgKey={key} key={key} {...PEOPLE[key]} />
+      {Object.keys(people).map(key =>
+        <Person imgKey={key} key={key} {...people[key]} />
       )}
     </PeopleStyl>
   </FullscreenSlide>
