@@ -2,7 +2,7 @@
 import React from "react"
 import FullscreenSlide from "../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
+import {isLtDesktopBigHeight, MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
 
 const AttendanceStyl = styled.div`
   display: flex;
@@ -36,7 +36,7 @@ const AttendanceSubheader = styled.p`
 
 const AttendanceHeaderStyl = styled.h1`
   color: ${PALETTE.SECONDARY};
-  font-size: 350px;
+  font-size: ${isLtDesktopBigHeight ? "200px" : "350px"};
   margin: 0;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`

@@ -27,7 +27,7 @@ const IntroCol = styled.div`
 
 const IntroParagraph = styled.p`
   color: ${PALETTE.SECONDARY};
-  line-height: 19px;
+  line-height: ${isLtDesktopBigHeight ? "17px" : "19px"};
 `
 
 const IntroHeadSnd = styled.h2`

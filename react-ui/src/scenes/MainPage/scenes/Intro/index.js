@@ -58,7 +58,7 @@ const IntroHeaderStyl = styled.h1`
   font-size: 60px;
   clear: both;
   height: 30px;
-  margin-bottom: 150px;
+  margin-bottom: ${isLtDesktopBigHeight ? "90px" : "150px"};
   
   ${MEDIA_ONLY_QUERY.DESKTOP`
     font-size: 40px;
