@@ -41,4 +41,9 @@ export const PEOPLE = {
     profession: "hokejista",
     fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/121269518544317/?type=3",
   },
+  ef: {
+    name: "Ewa Farna",
+    profession: "zpěvačka",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/121719715165964/?type=3",
+  },
 }
