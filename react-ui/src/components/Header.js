@@ -27,13 +27,20 @@ const HeaderStyl = styled.div`
     position: absolute;
   `}
 `
+const HeaderLink = styled.a`
+  color: ${PALETTE.SECONDARY};
+  text-decoration: none;
+`
+
 const HeaderIcon = styled.div`
   margin-right: 20px;
 `
 
 const Header = ({ children }) =>
   <HeaderStyl>
-    <div style={{marginLeft: "20px"}}>Generace s názorem</div>
+    <div style={{marginLeft: "20px"}}>
+      <HeaderLink href="/">Generace s názorem</HeaderLink>
+    </div>
 
     <div style={{display: "flex"}}>
       <HeaderIcon><Facebook /></HeaderIcon>

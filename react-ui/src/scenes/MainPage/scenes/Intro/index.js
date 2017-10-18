@@ -67,6 +67,17 @@ const IntroHeaderStyl = styled.h1`
   `}
 `
 
+const IntroLabel = styled.a`
+  position: relative;
+  bottom: 40px;
+  padding-left: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: ${PALETTE.SECONDARY};
+  text-decoration: none;
+`
+
+
 class Intro extends Component {
   constructor(props) {
     super(props)
@@ -109,8 +120,10 @@ class Intro extends Component {
 
     const center = <IntroCenter>{centerText}{centerLogo}</IntroCenter>
 
+    const label = <IntroLabel href="/kdo-jsme">Kdo jsme?</IntroLabel>
+
     return (
-      <FullscreenSlide className="Attendance">
+      <FullscreenSlide className="Attendance" label={label}>
         {isLtDesktopBig() ?
           <IntroStyl>
             {center} {approved} {declined}

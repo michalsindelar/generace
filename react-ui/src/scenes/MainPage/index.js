@@ -9,7 +9,6 @@ import Header from "../../components/Header"
 import Info from "./components/Info"
 import Intro from "./scenes/Intro/index"
 import People from "./scenes/People/index"
-import Team from "./components/Team"
 import {isLtDesktopBig} from "../../services/styleTools"
 
 const MainPage = () => {
@@ -26,7 +25,6 @@ const MainPage = () => {
           <People />
           <Info />
           <Appendix />
-          <Team />
         </div> :
 
         <FullPage>
@@ -35,7 +33,6 @@ const MainPage = () => {
           <People />
           <Info />
           <Appendix />
-          <Team />
         </FullPage>
       }
 

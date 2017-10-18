@@ -2,7 +2,7 @@
 import React from "react"
 import FullscreenSlide from "../../../components/FullscreenSlide/index"
 import styled from 'styled-components';
-import {isLtDesktopBigHeight, MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
+import { MEDIA_ONLY_QUERY, PALETTE} from "../../../services/styleTools"
 
 const TeamStyl = styled.div`
   display: flex;
@@ -11,19 +11,16 @@ const TeamStyl = styled.div`
   flex-direction: column;
   max-width: 100%;
   width: 1415px;
-  height: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   color: ${PALETTE.SECONDARY}; 
-  
-  ${MEDIA_ONLY_QUERY.DESKTOP`
-    height: auto;
-  `}
+  padding-bottom: 50px;
 `
 
 const TeamPerson = styled.div`
 `
 const TeamWrapper = styled.div`
-  padding-top: 30px;
+  padding-top: 60px;
 `
 const TeamPersonSubRole = styled.span`
   font-size: 12px;
@@ -41,7 +38,7 @@ const TeamGroup = styled.div`
 `
 
 
-const Team = () =>
+const TeamContent = () =>
   <FullscreenSlide className="Attendance">
 
     <TeamStyl>
@@ -66,4 +63,4 @@ const Team = () =>
 
   </FullscreenSlide>
 
-export default Team
+export default TeamContent

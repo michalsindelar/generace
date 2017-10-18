@@ -13,7 +13,7 @@ type Props = {
   footer: any
 }
 
-const FullscreenSlideStyl = styled.div`
+export const FullscreenSlideStyl = styled.div`
   background: ${PALETTE.PRIMARY} url('./slide-bg.svg') center bottom 30px no-repeat;
   height: 100%; // Super important
   position: relative;
@@ -32,8 +32,13 @@ const FullscreenSlideFooterStyl = styled.div`
   padding-bottom: 8px;
 `
 
+const FullscreenSlideFooterContainerStyl = styled.div`
+  width: 1415px;
+  margin: 0 auto;
+`
 
-const FullscreenSlide = ({ disableContainer, children, footer } : Props) =>
+
+const FullscreenSlide = ({ disableContainer, children, label, footer } : Props) =>
 
   <FullscreenSlideStyl>
     <Slide className="FullscreenSlide">
@@ -44,8 +49,13 @@ const FullscreenSlide = ({ disableContainer, children, footer } : Props) =>
 
     </Slide>
 
-    {footer &&
-      <FullscreenSlideFooterStyl>{footer}</FullscreenSlideFooterStyl>
+    {(footer || label) &&
+      <FullscreenSlideFooterStyl>
+        <FullscreenSlideFooterContainerStyl>
+          {label || ""}
+          {footer || ""}
+        </FullscreenSlideFooterContainerStyl>
+      </FullscreenSlideFooterStyl>
     }
 
   </FullscreenSlideStyl>
