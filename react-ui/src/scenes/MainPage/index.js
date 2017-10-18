@@ -1,6 +1,5 @@
 // @flow
 import React from "react"
-import R from "ramda"
 
 import { FullPage } from "react-full-page"
 
@@ -12,7 +11,6 @@ import Intro from "./scenes/Intro/index"
 import People from "./scenes/People/index"
 import Team from "./components/Team"
 import {isLtDesktopBig} from "../../services/styleTools"
-import {PEOPLE} from "../../services/consts"
 
 const MainPage = () => {
 
@@ -35,8 +33,6 @@ const MainPage = () => {
           <Intro />
           <Attendance />
           <People />
-          {/*<People people={R.pick(["ao", "lz", "fh"], PEOPLE)} />*/}
-          {/*<People people={R.pick(["es", "ej", "jk", "ef"], PEOPLE)} />*/}
           <Info />
           <Appendix />
           <Team />
