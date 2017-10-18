@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Slide} from "react-full-page"
 
 import Container from "../Container"
-import {MEDIA_ONLY_QUERY, PALETTE} from "../../services/styleTools"
+import {isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE} from "../../services/styleTools"
 
 type Props = {
   children: any,
@@ -41,13 +41,21 @@ const FullscreenSlideFooterContainerStyl = styled.div`
 const FullscreenSlide = ({ disableContainer, children, label, footer } : Props) =>
 
   <FullscreenSlideStyl>
-    <Slide className="FullscreenSlide">
-      {disableContainer
-        ? {children}
-        : <Container>{children}</Container>
-      }
+    {isLtDesktopBig() ?
+      <div>
+        {disableContainer
+          ? {children}
+          : <Container>{children}</Container>
+        }
+      </div> :
+      <Slide className="FullscreenSlide">
+        {disableContainer
+          ? {children}
+          : <Container>{children}</Container>
+        }
+      </Slide>
+    }
 
-    </Slide>
 
     {(footer || label) &&
       <FullscreenSlideFooterStyl>
