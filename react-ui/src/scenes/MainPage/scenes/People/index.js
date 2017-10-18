@@ -14,10 +14,12 @@ const PeopleStyl = styled.div`
   align–content: center;
   align-self: center;
   height: 100%;
+  flex-wrap: wrap;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`
     display: block;
     width: 100%;
+
   `}
 `
 

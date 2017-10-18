@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import {MEDIA_ONLY_QUERY, isLtDesktopBigHeight} from "../../../../../services/styleTools"
 
 const PersonStyl = styled.div`
-  width: 25%;
+  flex-basis: ${100/7}%;
   cursor: pointer;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`
@@ -48,7 +48,7 @@ const Person = ({ imgKey, name, profession, fbPost }) =>
       </PersonImgWrapperStyl>
 
       <PersonFooterStyl>
-        <div style={{fontSize: "30px", marginBottom: "5px"}}>{name}</div>
+        <div style={{fontSize: "20px", marginBottom: "5px"}}>{name}</div>
         <div>{profession}</div>
       </PersonFooterStyl>
 
