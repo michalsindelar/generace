@@ -57,6 +57,14 @@ const TeamContent = () =>
           <TeamPerson>Michal Šindelář<TeamPersonSubRole>/web</TeamPersonSubRole></TeamPerson>
           <TeamPerson>Marek Machovec<TeamPersonSubRole>/postprodukce</TeamPersonSubRole></TeamPerson>
         </TeamGroup>
+
+        <div><TeamGroup>
+          <TeamPerson>info@generacesnazorem.cz</TeamPerson>
+        </TeamGroup></div>
+
+
+
+
       </TeamWrapper>
 
     </TeamStyl>
