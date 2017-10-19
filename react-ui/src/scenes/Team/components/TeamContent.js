@@ -54,8 +54,8 @@ const TeamContent = () =>
         </div>
 
         <TeamGroup>
-          <TeamPerson>Michal Šindelář <TeamPersonSubRole>/web</TeamPersonSubRole></TeamPerson>
-          <TeamPerson>Jakub Ondráček <TeamPersonSubRole>/postprodukce</TeamPersonSubRole></TeamPerson>
+          <TeamPerson>Michal Šindelář<TeamPersonSubRole>/web</TeamPersonSubRole></TeamPerson>
+          <TeamPerson>Marek Machovec<TeamPersonSubRole>/postprodukce</TeamPersonSubRole></TeamPerson>
         </TeamGroup>
       </TeamWrapper>
 
