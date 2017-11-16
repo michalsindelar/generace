@@ -9,7 +9,8 @@ import Header from "../../components/Header"
 import Info from "./components/Info"
 import Intro from "./scenes/Intro/index"
 import People from "./scenes/People/index"
-import {isLtDesktopBig} from "../../services/styleTools"
+import Video from "./components/Video"
+import { isLtDesktopBig } from "../../services/styleTools"
 
 const MainPage = () => {
 
@@ -20,6 +21,7 @@ const MainPage = () => {
       {isLtDesktopBig() ?
 
         <div>
+          <Video />
           <Intro />
           <Attendance />
           <People />
@@ -28,6 +30,7 @@ const MainPage = () => {
         </div> :
 
         <FullPage>
+          <Video />
           <Intro />
           <Attendance />
           <People />
