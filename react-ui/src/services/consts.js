@@ -46,4 +46,24 @@ export const PEOPLE = {
     profession: "zpěvačka",
     fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/121719715165964/?type=3",
   },
+  jc: {
+    name: "Jan Cina",
+    profession: "herec",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/129274314410504/?type=3",
+  },
+  dt: {
+    name: "Do Thu Trang",
+    profession: "blogerka",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/131564530848149/?type=3",
+  },
+  bc: {
+    name: "Ben Cristovao",
+    profession: "hudebník, sportovec",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/132298554108080/?type=3",
+  },
+  md: {
+    name: "Marie Doležalová",
+    profession: "herečka, blogerka",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/132838794054056/?type=3",
+  }
 }
