@@ -2,8 +2,6 @@
 import React from "react"
 import styled from 'styled-components';
 
-import { Slide} from "react-full-page"
-
 import Container from "../Container"
 import {isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE} from "../../services/styleTools"
 
@@ -23,6 +21,12 @@ export const FullscreenSlideStyl = styled.div`
   `}
 `
 
+const SlideStyl = styled.div`
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+`
+
 const FullscreenSlideFooterStyl = styled.div`
   position: absolute;
   bottom: 0;
@@ -34,6 +38,7 @@ const FullscreenSlideFooterStyl = styled.div`
 
 const FullscreenSlideFooterContainerStyl = styled.div`
   width: 1415px;
+  max-width: 100%;
   margin: 0 auto;
 `
 
@@ -48,12 +53,12 @@ const FullscreenSlide = ({ disableContainer, children, label, footer } : Props) 
           : <Container>{children}</Container>
         }
       </div> :
-      <Slide className="FullscreenSlide">
+      <SlideStyl className="FullscreenSlide">
         {disableContainer
           ? {children}
           : <Container>{children}</Container>
         }
-      </Slide>
+      </SlideStyl>
     }
 
 

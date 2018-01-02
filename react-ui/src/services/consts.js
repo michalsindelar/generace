@@ -65,5 +65,25 @@ export const PEOPLE = {
     name: "Marie Doležalová",
     profession: "herečka, blogerka",
     fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/132838794054056/?type=3",
-  }
+  },
+  pg: {
+    name: "Paulie Garand",
+    profession: "rapper",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/133708227300446/?type=3",
+  },
+  k: {
+    name: "Kovy",
+    profession: "youtuber",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/134364583901477/?type=3",
+  },
+  gk: {
+    name: "Gabriela Koukalová",
+    profession: "biatlonistka",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/135534273784508/?type=3",
+  },
+  pk: {
+    name: "Petr Koukal",
+    profession: "sportovec",
+    fbPost: "",
+  },
 }

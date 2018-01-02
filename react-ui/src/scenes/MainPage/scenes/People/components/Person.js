@@ -35,11 +35,11 @@ const PersonFooterStyl = styled.div`
   text-align: center;
 `
 
-const Person = ({ imgKey, name, profession, fbPost }) =>
+const Person = ({ imgKey, name, profession, fbPost, dense }) =>
   <PersonStyl
     className={`Person`}
     onClick={() => {window.open(fbPost)}}
-    style={{paddingTop: isLtDesktopBigHeight ? "0" : "10%"}}
+    style={{maxHeight: dense ? "30%" : "initial"}}
   >
     <div>
 

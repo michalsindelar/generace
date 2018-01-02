@@ -9,8 +9,8 @@ const TeamStyl = styled.div`
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  max-width: 100%;
   width: 1415px;
+  max-width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
   color: ${PALETTE.SECONDARY}; 

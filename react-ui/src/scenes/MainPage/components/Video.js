@@ -8,7 +8,7 @@ import { MEDIA_ONLY_QUERY } from "../../../services/styleTools"
 const IframeWrapper = styled.div`
   & > iframe {
     
-      position: fixed;
+      position: absolute;
       right: 0;
       bottom: 0;
       min-width: 100%;

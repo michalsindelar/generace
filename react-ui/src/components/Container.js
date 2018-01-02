@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
+import { PALETTE } from "../services/styleTools"
 
 const ContainerStyl = styled.div`
   margin: 0 auto;
