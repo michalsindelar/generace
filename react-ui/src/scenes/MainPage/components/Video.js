@@ -31,7 +31,7 @@ const IframeWrapper = styled.div`
 const Video = () =>
   <FullscreenSlide className="Attendance">
     <IframeWrapper>
-      <iframe src="https://www.youtube.com/embed/Or3Zo07Us38?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/b1sdOG7fIQM?rel=0" frameborder="0" allowfullscreen></iframe>
     </IframeWrapper>
   </FullscreenSlide>
 

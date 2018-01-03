@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import {MEDIA_ONLY_QUERY, isLtDesktopBigHeight} from "../../../../../services/styleTools"
 
 const PersonStyl = styled.div`
-  flex-basis: ${100/7}%;
+  flex-basis: ${100/8}%;
   cursor: pointer;
 
   ${MEDIA_ONLY_QUERY.DESKTOP`

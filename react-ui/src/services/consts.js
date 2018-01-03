@@ -51,10 +51,10 @@ export const PEOPLE = {
     profession: "herec",
     fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/129274314410504/?type=3",
   },
-  dt: {
-    name: "Do Thu Trang",
-    profession: "blogerka",
-    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/131564530848149/?type=3",
+  pg: {
+    name: "Paulie Garand",
+    profession: "rapper",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/133708227300446/?type=3",
   },
   bc: {
     name: "Ben Cristovao",
@@ -65,11 +65,6 @@ export const PEOPLE = {
     name: "Marie Doležalová",
     profession: "herečka, blogerka",
     fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/132838794054056/?type=3",
-  },
-  pg: {
-    name: "Paulie Garand",
-    profession: "rapper",
-    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/133708227300446/?type=3",
   },
   k: {
     name: "Kovy",
@@ -85,5 +80,10 @@ export const PEOPLE = {
     name: "Petr Koukal",
     profession: "sportovec",
     fbPost: "",
+  },
+  dt: {
+    name: "Do Thu Trang",
+    profession: "blogerka",
+    fbPost: "https://www.facebook.com/generacesnazorem/photos/a.117239785613957.1073741828.106980163306586/131564530848149/?type=3",
   },
 }

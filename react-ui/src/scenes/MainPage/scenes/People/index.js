@@ -52,10 +52,10 @@ const People = ({ people = Object.keys(PEOPLE), dense }) =>
     {dense &&
       <PeopleDenseStylWrapper>
         <PeopleDenseStyl>
-          {R.take(7, people).map(key => <Person imgKey={key} key={key} {...PEOPLE[key]} dense />)}
+          {R.take(8, people).map(key => <Person imgKey={key} key={key} {...PEOPLE[key]} dense />)}
         </PeopleDenseStyl>
         <PeopleDenseStyl>
-          {R.takeLast(6, people).map(key => <Person imgKey={key} key={key} {...PEOPLE[key]} dense />)}
+          {R.takeLast(7, people).map(key => <Person imgKey={key} key={key} {...PEOPLE[key]} dense />)}
         </PeopleDenseStyl>
       </PeopleDenseStylWrapper>
     }
