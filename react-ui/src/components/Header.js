@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
-import {MEDIA_ONLY_QUERY, PALETTE} from "../services/styleTools"
+import {isLtDesktopBig, MEDIA_ONLY_QUERY, PALETTE} from "../services/styleTools"
 import {FACEBOOK_LINK} from "../services/consts"
 import Facebook from "./Facebook"
 import Instagram from "./Instagram"
@@ -45,6 +45,7 @@ const Header = ({ children }) =>
     <div style={{display: "flex"}}>
       <HeaderIcon><Facebook /></HeaderIcon>
       <HeaderIcon><Instagram /></HeaderIcon>
+      {!isLtDesktopBig() && <HeaderLink href="/kdo-jsme" style={{fontSize: "20px", lineHeight: "34px", paddingRight: "10px"}}>Kdo jsme?</HeaderLink>}
     </div>
 
   </HeaderStyl>
