@@ -10,3 +10,9 @@ Generace s názorem vzniká jako platforma s cílem zvýšit volební účast ml
 
 ## Generation with opinion [en]
 This platform forms with an aim to increase the voter turnout of young people in the Czech Republic.
+
+--
+
+## Deployment
+
+Automatically from the master branch using Heroku deploy.
